@@ -16,6 +16,11 @@
 
 - (void)viewDidLoad
 {
+    textLabel = [[UILabel alloc] initWithFrame:CGRectMake(10.0F, 10.0f, 200.0f, 100.0f)];
+    
+    textLabel.text = @"new test";
+    [self.view addSubview:textLabel];
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
