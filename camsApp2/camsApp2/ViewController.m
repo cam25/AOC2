@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "BaseTickets.h"
 @interface ViewController ()
 
 @end
@@ -16,10 +16,20 @@
 
 - (void)viewDidLoad
 {
-    textLabel = [[UILabel alloc] initWithFrame:CGRectMake(10.0F, 10.0f, 200.0f, 100.0f)];
+    baseTickets = [[BaseTickets alloc] init];
+    if (baseTickets != nil) {
+        
+    }
     
-    textLabel.text = @"new test";
-    [self.view addSubview:textLabel];
+    self.view.backgroundColor = [UIColor blueColor];
+    header = [[UILabel alloc] initWithFrame:CGRectMake(10.0f, 15.0f, 300.0f, 20.0f)];
+    header.backgroundColor = [UIColor redColor];
+    header.textAlignment = NSTextAlignmentCenter;
+    header.text = @" Washington Wizards Ticket Prices";
+    header.textColor = [UIColor whiteColor];
+    [self.view addSubview:header];
+    
+    
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.

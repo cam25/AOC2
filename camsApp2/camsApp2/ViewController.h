@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class BaseTickets;
 @interface ViewController : UIViewController
 {
-    UILabel *textLabel;
+    UILabel *header;
+    BaseTickets *baseTickets;
+    
 }
 @end

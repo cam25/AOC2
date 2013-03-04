@@ -1,5 +1,5 @@
 //
-//  greenMoney.h
+//  BaseTickets.h
 //  camsApp2
 //
 //  Created by Cameron Mozie on 3/4/13.
@@ -8,6 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
-@interface greenMoney : NSObject
+@interface BaseTickets : NSObject
+{
+    NSString *section;
+    float ticketPrice;
+    int seatLocation;
+}
 
+-(NSString*)getText;
 @end
