@@ -29,6 +29,14 @@
     header.textColor = [UIColor whiteColor];
     [self.view addSubview:header];
     
+       
+    baseLabel = [[UILabel alloc] initWithFrame:CGRectMake(2.0f, 60.0f, 320.0f, 50.0f)];
+    baseLabel.backgroundColor = [UIColor redColor];
+    baseLabel.textColor = [UIColor whiteColor];
+    baseLabel.numberOfLines = 4;
+    baseLabel.text = [baseTickets getText];
+    [self.view addSubview:baseLabel];
+    
     
     
     [super viewDidLoad];

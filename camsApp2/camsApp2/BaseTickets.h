@@ -8,12 +8,30 @@
 
 #import <Foundation/Foundation.h>
 
+
+
+
 @interface BaseTickets : NSObject
 {
-    NSString *section;
-    float ticketPrice;
-    int seatLocation;
+    int ticketEnum;
+ 
 }
 
--(NSString*)getText;
+typedef enum{
+    seasonTickets,
+    vipTickets,
+    groupTickets
+    
+}ticketEnum;
+
+@property NSString *section;
+@property float ticketCost;
+@property float fee;
+@property int seatLocation;
+@property float ticketPrice;
+
+-(id)init;
+
+-(void)calculateTotalTicketPrice;
+
 @end

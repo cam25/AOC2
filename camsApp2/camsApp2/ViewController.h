@@ -12,6 +12,6 @@
 {
     UILabel *header;
     BaseTickets *baseTickets;
-    
+    UILabel *baseLabel;
 }
 @end
