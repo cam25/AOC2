@@ -7,10 +7,21 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@interface groupTickets : NSObject
+#import "BaseTickets.h"
+@interface groupTickets : BaseTickets
 {
-    NSString *groupSeats;
-    int groupTicketPrice;
+    int groupEnum;
 }
+
+typedef enum{
+    
+    GROUP,
+    
+}groupEnum;
+
+@property BOOL partyOfFive;
+@property BOOL partyOfTen;
+@property float totalPriceOfGroupTickets;
+
+-(void)calculateTotalTicketPrice;
 @end

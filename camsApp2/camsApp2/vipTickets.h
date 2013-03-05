@@ -7,11 +7,23 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@interface vipTickets : NSObject
+#import "BaseTickets.h"
+@interface vipTickets : BaseTickets
 {
-    NSString *boxSeats;
-    int ticketPrice;
+    int vipEnum;
     
 }
+
+typedef enum{
+   VIP,
+    
+}vipEnum;
+
+@property int skyBoxUpgradePrice;
+@property int upgradeDiscount;
+@property float totalUpgradePurchase;
+
+-(void)calculateTotalTicketPrice;
+
+
 @end

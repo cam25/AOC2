@@ -10,22 +10,23 @@
 
 @implementation BaseTickets 
 
-@synthesize seatLocation, section, ticketCost, fee, ticketPrice;
+@synthesize section, seats, ticketCost, Tax, ticketPricePerSeat;
 
     -(id)init
     {
         self = [super init];
         if (self !=nil)
         {
-            [self setTicketPrice:0];
-            [self setFee:0];
-            [self setSeatLocation:nil];
+            [self setTicketPricePerSeat:0];
+            [self setSection:nil];
+            [self setTax:0];
+            [self setSeats:0];
             
         }
         return self;
     }
 -(void)calculateTotalTicketPrice {
-    NSLog(@"this is ticket price %f",ticketPrice);
+    NSLog(@"this is ticket price %f",ticketPricePerSeat);
 }
 
 @end

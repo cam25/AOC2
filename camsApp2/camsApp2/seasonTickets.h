@@ -10,11 +10,9 @@
 #import "BaseTickets.h"
 @interface seasonTickets : BaseTickets
 
-@property int seasonTicksPrice;
-@property float goldMemberPrice;
-@property float tax;
+
 @property int numberOfSeats;
 
 
-
+-(void)calculateTotalTicketPrice;
 @end

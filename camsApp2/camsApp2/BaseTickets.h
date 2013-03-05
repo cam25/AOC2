@@ -9,9 +9,9 @@
 #import <Foundation/Foundation.h>
 
 typedef enum{
-    SEASON,
-    VIP,
-    GORUP
+    season,
+    vip,
+    group
     
 }ticketEnum;
 
@@ -27,9 +27,9 @@ typedef enum{
 
 @property NSString *section;
 @property float ticketCost;
-@property float fee;
-@property int seatLocation;
-@property float ticketPrice;
+@property float Tax;
+@property int seats;
+@property float ticketPricePerSeat;
 
 -(id)init;
 

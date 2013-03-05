@@ -42,7 +42,7 @@
     seasonCalculation.backgroundColor = [UIColor redColor];
     seasonCalculation.textAlignment = NSTextAlignmentCenter;
     seasonCalculation.numberOfLines = 4;
-    seasonCalculation.text = [NSString stringWithFormat:@" %i is amount for Gold Member season Tickets", [seasonTickets ]];
+    
     seasonCalculation.textColor = [UIColor whiteColor];
     [self.view addSubview:seasonCalculation];
     

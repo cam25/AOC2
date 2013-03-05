@@ -10,4 +10,28 @@
 
 @implementation groupTickets
 
+@synthesize ticketPricePerSeat, Tax, section, partyOfFive,partyOfTen;
+
+-(id)init
+{
+    self = [super init];
+    if (self !=nil) {
+        [self setSection:@"booth"];
+        [self setTicketPricePerSeat:150.00];
+        [self setTax:24.33];
+        [self setPartyOfFive:YES];
+        
+    }
+    return self;
+    
+    
+}
+-(void)calculateTotalTicketPrice{
+    
+    if (partyOfFive == YES) {
+        [self setTotalPriceOfGroupTickets:(ticketPricePerSeat * 5 + Tax)];
+        NSLog(@"%f is total for group tickets for 5 people", self.totalPriceOfGroupTickets);
+    }
+    
+}
 @end
