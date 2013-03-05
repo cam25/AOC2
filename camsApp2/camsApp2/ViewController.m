@@ -30,12 +30,23 @@
     [self.view addSubview:header];
     
        
-    baseLabel = [[UILabel alloc] initWithFrame:CGRectMake(2.0f, 60.0f, 320.0f, 50.0f)];
-    baseLabel.backgroundColor = [UIColor redColor];
-    baseLabel.textColor = [UIColor whiteColor];
-    baseLabel.numberOfLines = 4;
-    baseLabel.text = [baseTickets getText];
-    [self.view addSubview:baseLabel];
+    seasonLabel = [[UILabel alloc] initWithFrame:CGRectMake(2.0f, 60.0f, 320.0f, 40.0f)];
+    seasonLabel.backgroundColor = [UIColor redColor];
+    seasonLabel.textColor = [UIColor whiteColor];
+    seasonLabel.numberOfLines = 1;
+    seasonLabel.textAlignment = NSTextAlignmentCenter;
+    seasonLabel.text = @"Season Tickets";
+    [self.view addSubview:seasonLabel];
+    
+    seasonCalculation = [[UILabel alloc] initWithFrame:CGRectMake(2.0f, 130.0f, 320.0f, 20.0f)];
+    seasonCalculation.backgroundColor = [UIColor redColor];
+    seasonCalculation.textAlignment = NSTextAlignmentCenter;
+    seasonCalculation.numberOfLines = 4;
+    seasonCalculation.text = [NSString stringWithFormat:@" %i is amount for Gold Member season Tickets", [seasonTickets ]];
+    seasonCalculation.textColor = [UIColor whiteColor];
+    [self.view addSubview:seasonCalculation];
+    
+    
     
     
     

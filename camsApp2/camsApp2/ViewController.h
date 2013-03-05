@@ -12,6 +12,8 @@
 {
     UILabel *header;
     BaseTickets *baseTickets;
-    UILabel *baseLabel;
+    UILabel *seasonLabel;
+    UILabel *seasonCalculation;
+    
 }
 @end

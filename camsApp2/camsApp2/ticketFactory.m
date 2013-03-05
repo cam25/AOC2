@@ -9,5 +9,8 @@
 #import "ticketFactory.h"
 
 @implementation ticketFactory
-
++(BaseTickets *)buyNewTicket: (int)ticketType
+{
+    return [[seasonTickets alloc]init];
+}
 @end

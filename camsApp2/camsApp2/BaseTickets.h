@@ -8,21 +8,22 @@
 
 #import <Foundation/Foundation.h>
 
-
+typedef enum{
+    SEASON,
+    VIP,
+    GORUP
+    
+}ticketEnum;
 
 
 @interface BaseTickets : NSObject
 {
-    int ticketEnum;
+    ticketEnum ticketEnum;
+    
  
 }
 
-typedef enum{
-    seasonTickets,
-    vipTickets,
-    groupTickets
-    
-}ticketEnum;
+
 
 @property NSString *section;
 @property float ticketCost;

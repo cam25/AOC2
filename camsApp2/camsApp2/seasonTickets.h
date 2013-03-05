@@ -7,10 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BaseTickets.h"
+@interface seasonTickets : BaseTickets
 
-@interface seasonTickets : NSObject
-{
-    NSString *season;
-    int seasonTicketPrice;
-}
+@property int seasonTicksPrice;
+@property float goldMemberPrice;
+@property float tax;
+@property int numberOfSeats;
+
+
+
 @end

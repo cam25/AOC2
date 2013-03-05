@@ -9,5 +9,24 @@
 #import "seasonTickets.h"
 
 @implementation seasonTickets
+@synthesize seasonTicksPrice, tax, goldMemberPrice, numberOfSeats;
+-(id)init
+{
+    self = [super init];
+    if (self != nil) {
+        [self setSeasonTicksPrice:5203];
+        [self setGoldMemberPrice:4200.00];
+        [self setNumberOfSeats:1];
+        [self setTax:30.00];
+        
+        
+    }
+    return self;
+};
 
+-(void)calculateTotalTicketPrice
+{
+    [self setSeasonTicksPrice:(goldMemberPrice + tax) ];
+     NSLog(@"gold member season tickets are %d", self.seasonTicksPrice);
+}
 @end

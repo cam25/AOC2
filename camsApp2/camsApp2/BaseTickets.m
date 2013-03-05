@@ -17,15 +17,15 @@
         self = [super init];
         if (self !=nil)
         {
-            [self setTicketPrice:nil];
-            [self setFee:nil]
-            [self setSeatLocation:0];
+            [self setTicketPrice:0];
+            [self setFee:0];
+            [self setSeatLocation:nil];
             
         }
         return self;
     }
 -(void)calculateTotalTicketPrice {
-    [self setTicketPrice:ticketCost + fee];
+    NSLog(@"this is ticket price %f",ticketPrice);
 }
 
 @end

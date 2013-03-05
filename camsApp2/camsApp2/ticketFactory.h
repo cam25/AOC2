@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BaseTickets.h"
+#import "seasonTickets.h"
+#import "vipTickets.h"
+#import "groupTickets.h"
 
 @interface ticketFactory : NSObject
-
++(BaseTickets *)buyNewTicket: (int)ticketType;
 @end
