@@ -26,7 +26,7 @@
 
 -(void)calculateTotalTicketPrice
 {
-    [self setTicketPricePerSeat:(ticketPricePerSeat + Tax) ];
-     NSLog(@" season tickets are %f", self.ticketPricePerSeat);
+    [self setTotalPriceForTickets:(ticketPricePerSeat + Tax) ];
+     NSLog(@" season tickets are %f", self.totalPriceForTickets);
 }
 @end

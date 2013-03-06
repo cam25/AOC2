@@ -12,7 +12,7 @@
 
 
 @property int numberOfSeats;
-
+@property float totalPriceForTickets;
 
 -(void)calculateTotalTicketPrice;
 @end

@@ -11,6 +11,13 @@
 @implementation ticketFactory
 +(BaseTickets *)buyNewTicket: (int)ticketType
 {
-    return [[seasonTickets alloc]init];
+    if (ticketType == season) {
+        return [[seasonTickets alloc]init];
+    }else if (ticketType == VIP)
+        return [[vipTickets alloc]init];
+else if (ticketType == GROUP)
+        return [[groupTickets alloc]init];
+else return nil;
+
 }
 @end

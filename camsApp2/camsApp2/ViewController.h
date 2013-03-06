@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ticketFactory.h"
 @class BaseTickets;
 @interface ViewController : UIViewController
 {

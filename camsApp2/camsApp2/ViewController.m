@@ -29,7 +29,8 @@
     header.textColor = [UIColor whiteColor];
     [self.view addSubview:header];
     
-       
+    seasonTickets *getSeasonTickets = (seasonTickets*)[ticketFactory buyNewTicket:season];
+    [getSeasonTickets setSection:@"floor"];
     seasonLabel = [[UILabel alloc] initWithFrame:CGRectMake(2.0f, 60.0f, 320.0f, 40.0f)];
     seasonLabel.backgroundColor = [UIColor redColor];
     seasonLabel.textColor = [UIColor whiteColor];
@@ -37,12 +38,13 @@
     seasonLabel.textAlignment = NSTextAlignmentCenter;
     seasonLabel.text = @"Season Tickets";
     [self.view addSubview:seasonLabel];
+     
     
     seasonCalculation = [[UILabel alloc] initWithFrame:CGRectMake(2.0f, 130.0f, 320.0f, 20.0f)];
     seasonCalculation.backgroundColor = [UIColor redColor];
     seasonCalculation.textAlignment = NSTextAlignmentCenter;
     seasonCalculation.numberOfLines = 4;
-    
+    seasonCalculation.text = [NSString stringWithFormat:@"season tickets cost %.2f", [ getSeasonTickets totalPriceForTickets]];
     seasonCalculation.textColor = [UIColor whiteColor];
     [self.view addSubview:seasonCalculation];
     
