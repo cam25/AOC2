@@ -15,6 +15,10 @@
     BaseTickets *baseTickets;
     UILabel *seasonLabel;
     UILabel *seasonCalculation;
+    UILabel *vipLabel;
+    UILabel *vipCalculation;
+    UILabel *groupLabel;
+    UILabel *groupCalculation;
     
 }
 @end

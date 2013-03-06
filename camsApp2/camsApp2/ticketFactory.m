@@ -13,9 +13,9 @@
 {
     if (ticketType == season) {
         return [[seasonTickets alloc]init];
-    }else if (ticketType == VIP)
+    }else if (ticketType == vip)
         return [[vipTickets alloc]init];
-else if (ticketType == GROUP)
+else if (ticketType == group)
         return [[groupTickets alloc]init];
 else return nil;
 

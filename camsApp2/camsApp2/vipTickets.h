@@ -19,7 +19,7 @@ typedef enum{
     
 }vipEnum;
 
-@property int skyBoxUpgradePrice;
+@property float skyBoxUpgradePrice;
 @property int upgradeDiscount;
 @property float totalUpgradePurchase;
 

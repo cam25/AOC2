@@ -34,11 +34,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "camsApp2/seasonTickets.m"
-         timestampString = "384220086.506562"
+         timestampString = "384288561.883901"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "29"
-         endingLineNumber = "29"
+         startingLineNumber = "30"
+         endingLineNumber = "30"
          landmarkName = "-calculateTotalTicketPrice"
          landmarkType = "5">
       </FileBreakpoint>
@@ -47,11 +47,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "camsApp2/seasonTickets.m"
-         timestampString = "384220097.4674"
+         timestampString = "384288561.883901"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "30"
-         endingLineNumber = "30"
+         startingLineNumber = "31"
+         endingLineNumber = "31"
          landmarkName = "-calculateTotalTicketPrice"
          landmarkType = "5">
       </FileBreakpoint>
@@ -73,11 +73,24 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "camsApp2/ViewController.m"
-         timestampString = "384221209.409167"
+         timestampString = "384293681.346227"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "33"
-         endingLineNumber = "33"
+         startingLineNumber = "35"
+         endingLineNumber = "35"
+         landmarkName = "-viewDidLoad"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "camsApp2/ViewController.m"
+         timestampString = "384293681.346227"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "78"
+         endingLineNumber = "78"
          landmarkName = "-viewDidLoad"
          landmarkType = "5">
       </FileBreakpoint>
