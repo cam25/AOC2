@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-typedef enum{
+typedef enum{//enum sets type to default at 0
     season,
     vip,
     group

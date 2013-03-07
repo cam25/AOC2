@@ -7,11 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "BaseTickets.h"
-#import "seasonTickets.h"
-#import "vipTickets.h"
-#import "groupTickets.h"
+#import "BaseTickets.h" //allows access to base
+#import "seasonTickets.h"//allows access to season
+#import "vipTickets.h"//allows access to vip
+#import "groupTickets.h"//allows access to group
 
 @interface ticketFactory : NSObject
+
+//static class method definition
 +(BaseTickets *)buyNewTicket: (int)ticketType;
+
 @end
