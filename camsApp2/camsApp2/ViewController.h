@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ticketFactory.h"
-@class BaseTickets;
+#import "ticketFactory.h" //imports ticket factory
+@class BaseTickets; //Base ticket class
 @interface ViewController : UIViewController
 {
     UILabel *header;

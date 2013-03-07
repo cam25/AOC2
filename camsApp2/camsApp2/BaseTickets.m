@@ -9,9 +9,11 @@
 #import "BaseTickets.h"
 
 @implementation BaseTickets 
-
+//synthesize creats getters/setter methods for each property
 @synthesize section, seats, ticketCost, Tax, ticketPricePerSeat;
 
+
+//initializes base and creates instance and sets ticket price section tax and seats to nil or 0.
     -(id)init
     {
         self = [super init];
@@ -25,6 +27,7 @@
         }
         return self;
     }
+//calulation method for 
 -(void)calculateTotalTicketPrice {
     NSLog(@"this is ticket price %f",ticketPricePerSeat);
 }

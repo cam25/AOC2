@@ -23,7 +23,7 @@ typedef enum{
  
 }
 
-
+//properties / base data members to be used in subclasses
 
 @property NSString *section;
 @property float ticketCost;
@@ -31,8 +31,9 @@ typedef enum{
 @property int seats;
 @property float ticketPricePerSeat;
 
+//initialize
 -(id)init;
-
+//calculates tickets prices and/or used to manipulate total ticket prices.
 -(void)calculateTotalTicketPrice;
 
 @end

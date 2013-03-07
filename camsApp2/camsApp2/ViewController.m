@@ -18,7 +18,7 @@
 {
     baseTickets = [[BaseTickets alloc] init];
    
-    
+    // top label
     self.view.backgroundColor = [UIColor blueColor];
     header = [[UILabel alloc] initWithFrame:CGRectMake(10.0f, 15.0f, 300.0f, 20.0f)];
     header.backgroundColor = [UIColor redColor];
@@ -28,13 +28,13 @@
     [self.view addSubview:header];
     
   
-      
+    //creates an instance from the factory of type object seasonTickets
     seasonTickets *getSeasonTickets = (seasonTickets*)[ticketFactory buyNewTicket:season];
-    [getSeasonTickets setSection:@"floor"];
+    
     
     if (getSeasonTickets != nil){
         
-    
+    //creates label for season tickets
     seasonLabel = [[UILabel alloc] initWithFrame:CGRectMake(2.0f, 40.0f, 320.0f, 20.0f)];
     seasonLabel.backgroundColor = [UIColor redColor];
     seasonLabel.textColor = [UIColor whiteColor];
@@ -43,8 +43,10 @@
     seasonLabel.text = @"Season Tickets";
     [self.view addSubview:seasonLabel];
     
-     
+     //calls calulation method for season ticket calculation
     [getSeasonTickets calculateTotalTicketPrice];
+    
+    //creates season ticket calculation label
     seasonCalculation = [[UILabel alloc] initWithFrame:CGRectMake(2.0f, 63.0f, 320.0f, 90.0f)];
     seasonCalculation.backgroundColor = [UIColor redColor];
     seasonCalculation.textAlignment = NSTextAlignmentCenter;
@@ -55,10 +57,11 @@
     
     };
     
-    
+    //creates an instance from the factory of type object vip tickets
     vipTickets *getVipTickets = (vipTickets*)[ticketFactory buyNewTicket:vip];
     if (getVipTickets != nil) {
         
+        //call calculation method for getVipTickets
         [getVipTickets calculateTotalTicketPrice];
     
     vipLabel = [[UILabel alloc] initWithFrame:CGRectMake(2.0f, 156.0f, 320.0f, 20.0f)];
@@ -69,7 +72,7 @@
     vipLabel.text = [NSString stringWithFormat:@"VIP Tickets"];
     [self.view addSubview:vipLabel];
     
-    
+     //calculation label
     vipCalculation = [[UILabel alloc] initWithFrame:CGRectMake(2.0f, 180.0f, 320.0f, 125.0f)];
     vipCalculation.backgroundColor = [UIColor redColor];
     vipCalculation.textColor = [UIColor whiteColor];
@@ -80,10 +83,11 @@
     
     };
     
+    //creates an instance from the factory of type object groupTickets
     groupTickets *getGroupTickets = (groupTickets*)[ticketFactory buyNewTicket:group];
     if(getGroupTickets != nil){
         
-    
+    //calls calculation method for groupTickets
     [getGroupTickets calculateTotalTicketPrice];
     
     groupLabel = [[UILabel alloc] initWithFrame:CGRectMake(2.0f, 309.0f, 320.0f, 20.0f)];
@@ -94,6 +98,7 @@
     groupLabel.text = [NSString stringWithFormat:@"Group Tickets"];
     [self.view addSubview:groupLabel];
     
+        //calculation label
     groupCalculation = [[UILabel alloc] initWithFrame:CGRectMake(2.0f, 333.0f, 320.0f, 119.0f)];
     groupCalculation.backgroundColor = [UIColor redColor];
     groupCalculation.textColor = [UIColor whiteColor];
