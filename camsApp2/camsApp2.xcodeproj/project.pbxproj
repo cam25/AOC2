@@ -24,7 +24,11 @@
 		1148D7CF16E475A6006EBFB7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1148D7A716E475A6006EBFB7 /* Foundation.framework */; };
 		1148D7D716E475A6006EBFB7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1148D7D516E475A6006EBFB7 /* InfoPlist.strings */; };
 		1148D7DA16E475A6006EBFB7 /* camsApp2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1148D7D916E475A6006EBFB7 /* camsApp2Tests.m */; };
-		1148D7E516E4791F006EBFB7 /* greenMoney.m in Sources */ = {isa = PBXBuildFile; fileRef = 1148D7E416E4791F006EBFB7 /* greenMoney.m */; };
+		1148D7E816E532D3006EBFB7 /* BaseTickets.m in Sources */ = {isa = PBXBuildFile; fileRef = 1148D7E716E532D3006EBFB7 /* BaseTickets.m */; };
+		1148D7EB16E55F41006EBFB7 /* seasonTickets.m in Sources */ = {isa = PBXBuildFile; fileRef = 1148D7EA16E55F41006EBFB7 /* seasonTickets.m */; };
+		1148D7EE16E55FF7006EBFB7 /* vipTickets.m in Sources */ = {isa = PBXBuildFile; fileRef = 1148D7ED16E55FF7006EBFB7 /* vipTickets.m */; };
+		1148D7F116E560CA006EBFB7 /* groupTickets.m in Sources */ = {isa = PBXBuildFile; fileRef = 1148D7F016E560CA006EBFB7 /* groupTickets.m */; };
+		1148D7F416E63FF0006EBFB7 /* ticketFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1148D7F316E63FF0006EBFB7 /* ticketFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,8 +65,16 @@
 		1148D7D616E475A6006EBFB7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1148D7D816E475A6006EBFB7 /* camsApp2Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = camsApp2Tests.h; sourceTree = "<group>"; };
 		1148D7D916E475A6006EBFB7 /* camsApp2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = camsApp2Tests.m; sourceTree = "<group>"; };
-		1148D7E316E4791F006EBFB7 /* greenMoney.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = greenMoney.h; sourceTree = "<group>"; };
-		1148D7E416E4791F006EBFB7 /* greenMoney.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = greenMoney.m; sourceTree = "<group>"; };
+		1148D7E616E532D3006EBFB7 /* BaseTickets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTickets.h; sourceTree = "<group>"; };
+		1148D7E716E532D3006EBFB7 /* BaseTickets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTickets.m; sourceTree = "<group>"; };
+		1148D7E916E55F41006EBFB7 /* seasonTickets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = seasonTickets.h; sourceTree = "<group>"; };
+		1148D7EA16E55F41006EBFB7 /* seasonTickets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = seasonTickets.m; sourceTree = "<group>"; };
+		1148D7EC16E55FF7006EBFB7 /* vipTickets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vipTickets.h; sourceTree = "<group>"; };
+		1148D7ED16E55FF7006EBFB7 /* vipTickets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vipTickets.m; sourceTree = "<group>"; };
+		1148D7EF16E560CA006EBFB7 /* groupTickets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = groupTickets.h; sourceTree = "<group>"; };
+		1148D7F016E560CA006EBFB7 /* groupTickets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = groupTickets.m; sourceTree = "<group>"; };
+		1148D7F216E63FF0006EBFB7 /* ticketFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ticketFactory.h; sourceTree = "<group>"; };
+		1148D7F316E63FF0006EBFB7 /* ticketFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ticketFactory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,8 +141,16 @@
 				1148D7C016E475A6006EBFB7 /* ViewController_iPhone.xib */,
 				1148D7C316E475A6006EBFB7 /* ViewController_iPad.xib */,
 				1148D7AC16E475A6006EBFB7 /* Supporting Files */,
-				1148D7E316E4791F006EBFB7 /* greenMoney.h */,
-				1148D7E416E4791F006EBFB7 /* greenMoney.m */,
+				1148D7E616E532D3006EBFB7 /* BaseTickets.h */,
+				1148D7E716E532D3006EBFB7 /* BaseTickets.m */,
+				1148D7F216E63FF0006EBFB7 /* ticketFactory.h */,
+				1148D7F316E63FF0006EBFB7 /* ticketFactory.m */,
+				1148D7E916E55F41006EBFB7 /* seasonTickets.h */,
+				1148D7EA16E55F41006EBFB7 /* seasonTickets.m */,
+				1148D7EC16E55FF7006EBFB7 /* vipTickets.h */,
+				1148D7ED16E55FF7006EBFB7 /* vipTickets.m */,
+				1148D7EF16E560CA006EBFB7 /* groupTickets.h */,
+				1148D7F016E560CA006EBFB7 /* groupTickets.m */,
 			);
 			path = camsApp2;
 			sourceTree = "<group>";
@@ -282,7 +302,11 @@
 				1148D7B216E475A6006EBFB7 /* main.m in Sources */,
 				1148D7B616E475A6006EBFB7 /* AppDelegate.m in Sources */,
 				1148D7BF16E475A6006EBFB7 /* ViewController.m in Sources */,
-				1148D7E516E4791F006EBFB7 /* greenMoney.m in Sources */,
+				1148D7E816E532D3006EBFB7 /* BaseTickets.m in Sources */,
+				1148D7EB16E55F41006EBFB7 /* seasonTickets.m in Sources */,
+				1148D7EE16E55FF7006EBFB7 /* vipTickets.m in Sources */,
+				1148D7F116E560CA006EBFB7 /* groupTickets.m in Sources */,
+				1148D7F416E63FF0006EBFB7 /* ticketFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
