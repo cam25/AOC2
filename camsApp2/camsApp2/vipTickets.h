@@ -18,7 +18,7 @@ typedef enum{
    VIP,
     
 }vipEnum;
-
+//property definitions
 @property float skyBoxUpgradePrice;
 @property int upgradeDiscount;
 @property float totalUpgradePurchase;

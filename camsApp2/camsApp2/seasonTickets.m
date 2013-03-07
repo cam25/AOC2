@@ -14,6 +14,7 @@
 {
     self = [super init];
     if (self != nil) {
+        //sets values to my properties
         [self setNumberOfSeats:2];
         [self setTicketPricePerSeat:5200.00];
         [self setTax:30.00];
@@ -23,7 +24,7 @@
     }
     return self;
 };
-
+//calculation method for manipulation of values
 -(void)calculateTotalTicketPrice
 {
     NSLog(@"ticket price is %.2f", self.ticketPricePerSeat);

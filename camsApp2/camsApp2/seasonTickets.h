@@ -10,7 +10,7 @@
 #import "BaseTickets.h"
 @interface seasonTickets : BaseTickets
 
-
+//properties
 @property int numberOfSeats;
 @property float totalPriceForTickets;
 

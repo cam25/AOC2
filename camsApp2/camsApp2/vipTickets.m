@@ -16,6 +16,7 @@
     self = [super init];
     if(self != nil)
     {
+        //sets values to properties
         [self setTicketPricePerSeat:137.32];
         [self setTax:44.23];
         [self setSection:@"skyBox"];

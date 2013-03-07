@@ -31,7 +31,7 @@
     //creates an instance from the factory of type object seasonTickets
     seasonTickets *getSeasonTickets = (seasonTickets*)[ticketFactory buyNewTicket:season];
     
-    
+    //Checks if object is created properly and create UILabels
     if (getSeasonTickets != nil){
         
     //creates label for season tickets

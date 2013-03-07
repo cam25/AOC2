@@ -19,6 +19,7 @@ typedef enum{
     
 }groupEnum;
 
+//properties
 @property BOOL partyOfFive;
 @property BOOL partyOfTen;
 @property float totalPriceOfGroupTickets;

@@ -16,6 +16,7 @@
 {
     self = [super init];
     if (self !=nil) {
+        //sets values to properties
         [self setSection:@"booth"];
         [self setTicketPricePerSeat:150.00];
         [self setTax:24.33];
