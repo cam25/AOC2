@@ -32,6 +32,7 @@
 -(IBAction)infoClick:(id)sender;
 -(IBAction)onStepperClick:(id)sender;
 -(IBAction)segmentChange:(id)sender;
+-(IBAction)calculateClick:(id)sender;
 @end
 /*
  UILabel *header;

@@ -8,11 +8,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "camsApp2/ViewController.m"
-         timestampString = "384748506.515426"
+         timestampString = "384795811.754135"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "20"
-         endingLineNumber = "20"
+         startingLineNumber = "25"
+         endingLineNumber = "25"
          landmarkName = "-viewDidLoad"
          landmarkType = "5">
       </FileBreakpoint>
@@ -112,11 +112,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "camsApp2/ViewController.m"
-         timestampString = "384748506.515426"
+         timestampString = "384807361.928425"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "34"
-         endingLineNumber = "34"
+         startingLineNumber = "63"
+         endingLineNumber = "63"
          landmarkName = "-onClick:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -125,11 +125,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "camsApp2/ViewController.m"
-         timestampString = "384748506.515426"
+         timestampString = "384807361.928425"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "56"
-         endingLineNumber = "56"
+         startingLineNumber = "108"
+         endingLineNumber = "108"
          landmarkName = "-infoClick:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -138,11 +138,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "camsApp2/ViewController.m"
-         timestampString = "384748852.136445"
+         timestampString = "384807361.928425"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "60"
-         endingLineNumber = "60"
+         startingLineNumber = "112"
+         endingLineNumber = "112"
          landmarkName = "-infoClick:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -151,13 +151,26 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "camsApp2/ViewController.m"
-         timestampString = "384748867.640836"
+         timestampString = "384807361.928425"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "58"
-         endingLineNumber = "58"
+         startingLineNumber = "110"
+         endingLineNumber = "110"
          landmarkName = "-infoClick:"
          landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "camsApp2/ViewController.m"
+         timestampString = "384795504.986207"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "18"
+         endingLineNumber = "18"
+         landmarkName = "@implementation ViewController"
+         landmarkType = "3">
       </FileBreakpoint>
    </FileBreakpoints>
 </Bucket>

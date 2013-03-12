@@ -15,6 +15,11 @@
 
 @implementation ViewController
 
+typedef enum {
+    CYAN = 0,
+    BURGANDY,
+    GOLD
+}colorDef;
 - (void)viewDidLoad
 {
     label1.text = @"Cameron's Ticket Purchaser";
@@ -30,17 +35,57 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(IBAction)onStepperClick:(id)sender
+{
+    
+    if (counter != nil) {
+        
+        int counterAdd = counter.value;
+        if (seasonTickButn.enabled && vipTickButn.enabled  && groupTickButn.enabled == true) {
+            
+            categoryInput.text = [NSString stringWithFormat:@"%d", counterAdd];
+        }else if(seasonTickButn.enabled == false)
+        {
+            categoryInput.text = [NSString stringWithFormat:@"Season %d", counterAdd];
+        }else if (vipTickButn.enabled == false)
+        {
+            categoryInput.text = [NSString stringWithFormat:@"vip %d", counterAdd];
+        }else if (groupTickButn.enabled == false)
+        {
+            categoryInput.text = [NSString stringWithFormat:@"group %d", counterAdd];
+        }
+        
+        
+    }
+}
+
 -(IBAction)onClick:(id)sender
 {
     UIButton *button = (UIButton*)sender;
     if (button !=nil) {
         if (button.tag == 0) {
             
+            int counterAdd = counter.value;
+            seasonTickButn.enabled = false;
             vipTickButn.enabled = true;
+            groupTickButn.enabled = true;
+            labelView.text = [NSString stringWithFormat:@"season ticket %d", counterAdd];
+            categoryInput.text = [NSString stringWithFormat:@"seasonticket %d", counterAdd];
+            
+            
             
             NSLog(@"you pressed season button");
             
         } else if (button.tag == 1) {
+            
+            int counterAdd = counter.value;
+            labelView.text = [NSString stringWithFormat:@"vip ticket %d", counterAdd];
+
+            categoryInput.text = [NSString stringWithFormat:@"vip tickets %d", counterAdd];
+            
+            seasonTickButn.enabled = true;
+            vipTickButn.enabled = false;
+            groupTickButn.enabled = true;
             
             groupTickButn.enabled = true;
             NSLog(@"you pressed vip button");
@@ -48,6 +93,13 @@
         }else if (button.tag == 2)
             
         {
+            int counterAdd = counter.value;
+            seasonTickButn.enabled = true;
+            vipTickButn.enabled = true;
+            groupTickButn.enabled = false;
+            labelView.text = [NSString stringWithFormat:@"group ticket %d", counterAdd];
+
+            categoryInput.text = [NSString stringWithFormat:@"group tickets %d", counterAdd];
             NSLog(@"you pressed group button");
         }
     }
@@ -62,16 +114,7 @@
 
 }
 
--(IBAction)onStepperClick:(id)sender
-{
-    
-    if (counter != nil) {
-        
-        int currentValue = counter.value;
-        labelView.text = [NSString stringWithFormat:@"step value is = %d", currentValue];
-        
-    }
-}
+
 
 -(IBAction)segmentChange:(id)sender
 {
@@ -81,15 +124,33 @@
             int selectedIndex = segmentControl.selectedSegmentIndex;
             
             
-            if (selectedIndex == 0) {
-                self.view.backgroundColor = [UIColor colorWithRed:160/255.0f green:67/255.0f blue:0/255.0f alpha:1.0f];
-            }else if (selectedIndex == 1)
-            {
-                self.view.backgroundColor = [UIColor cyanColor ];
-            }else if (selectedIndex == 2)
-                self.view.backgroundColor = [UIColor colorWithRed:225/255.0f green:175/255.0f blue:11/255.0f alpha:1.0f];
+            switch (selectedIndex) {
+                case BURGANDY:
+                    self.view.backgroundColor = [UIColor colorWithRed:160/255.0f green:67/255.0f blue:0/255.0f alpha:1.0f];
+                    break;
+                    
+                    case CYAN:
+                    self.view.backgroundColor = [UIColor cyanColor ];
+                    break;
+                    
+                    case GOLD:
+                    
+                default:
+                    self.view.backgroundColor = [UIColor colorWithRed:225/255.0f green:175/255.0f blue:11/255.0f alpha:1.0f];
+                    break;
+            }
+            
+           
         }
 }
+-(IBAction)calculateClick:(id)sender
+{
+    int counterAdd = counter.value;
+    
+    categoryInput.text = [NSString stringWithFormat:@"Total price is %d", counterAdd];
+  
+}
+
 @end
 /*
  // top label
