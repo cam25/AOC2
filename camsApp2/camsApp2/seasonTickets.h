@@ -11,8 +11,11 @@
 @interface seasonTickets : BaseTickets
 
 //properties
-@property int numberOfSeats;
-@property float totalPriceForTickets;
+
+@property float totalPriceForSeasonTickets;
+@property int firstTimeBuyerPrice;
+@property int firstTimeBuyerDiscount;
+
 
 -(void)calculateTotalTicketPrice;
 @end

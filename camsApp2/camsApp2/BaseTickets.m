@@ -10,7 +10,7 @@
 
 @implementation BaseTickets 
 //synthesize creats getters/setter methods for each property
-@synthesize section, seats, ticketCost, Tax, ticketPricePerSeat;
+@synthesize section, seats, Tax, ticketPricePerSeat, toalTicketPricePerSeat;
 
 
 //initializes base and creates instance and sets ticket price section tax and seats to nil or 0.
@@ -19,6 +19,7 @@
         self = [super init];
         if (self !=nil)
         {
+            [self setToalTicketPricePerSeat:0];
             [self setTicketPricePerSeat:0];
             [self setSection:nil];
             [self setTax:0];
@@ -29,7 +30,7 @@
     }
 //calulation method for 
 -(void)calculateTotalTicketPrice {
-    NSLog(@"this is ticket price %f",ticketPricePerSeat);
+    NSLog(@"this is ticket price %f",toalTicketPricePerSeat);
 }
 
 @end

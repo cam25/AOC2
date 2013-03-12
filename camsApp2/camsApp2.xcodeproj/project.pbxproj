@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		110BCA2216EE866300F4AE63 /* ViewControllerTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 110BCA2116EE866300F4AE63 /* ViewControllerTwo.m */; };
 		1148D7A616E475A6006EBFB7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1148D7A516E475A6006EBFB7 /* UIKit.framework */; };
 		1148D7A816E475A6006EBFB7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1148D7A716E475A6006EBFB7 /* Foundation.framework */; };
 		1148D7AA16E475A6006EBFB7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1148D7A916E475A6006EBFB7 /* CoreGraphics.framework */; };
@@ -42,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		110BCA2016EE866300F4AE63 /* ViewControllerTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewControllerTwo.h; path = ../../week2/camWeek2/camWeek2/ViewControllerTwo.h; sourceTree = "<group>"; };
+		110BCA2116EE866300F4AE63 /* ViewControllerTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewControllerTwo.m; path = ../../week2/camWeek2/camWeek2/ViewControllerTwo.m; sourceTree = "<group>"; };
 		1148D7A216E475A6006EBFB7 /* camsApp2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = camsApp2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1148D7A516E475A6006EBFB7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1148D7A716E475A6006EBFB7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -151,6 +154,8 @@
 				1148D7ED16E55FF7006EBFB7 /* vipTickets.m */,
 				1148D7EF16E560CA006EBFB7 /* groupTickets.h */,
 				1148D7F016E560CA006EBFB7 /* groupTickets.m */,
+				110BCA2016EE866300F4AE63 /* ViewControllerTwo.h */,
+				110BCA2116EE866300F4AE63 /* ViewControllerTwo.m */,
 			);
 			path = camsApp2;
 			sourceTree = "<group>";
@@ -307,6 +312,7 @@
 				1148D7EE16E55FF7006EBFB7 /* vipTickets.m in Sources */,
 				1148D7F116E560CA006EBFB7 /* groupTickets.m in Sources */,
 				1148D7F416E63FF0006EBFB7 /* ticketFactory.m in Sources */,
+				110BCA2216EE866300F4AE63 /* ViewControllerTwo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

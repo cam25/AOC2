@@ -20,9 +20,10 @@ typedef enum{
 }groupEnum;
 
 //properties
-@property BOOL partyOfFive;
-@property BOOL partyOfTen;
-@property float totalPriceOfGroupTickets;
+@property int partyOfFive;
+@property int partyOfTen;
+@property float totalPriceOfFiveGroupTickets;
+@property float totalPriceOfTenGroupTickets;
 
 -(void)calculateTotalTicketPrice;
 @end

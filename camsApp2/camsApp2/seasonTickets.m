@@ -8,17 +8,21 @@
 
 #import "seasonTickets.h"
 
+
 @implementation seasonTickets
-@synthesize numberOfSeats, section, Tax, ticketPricePerSeat, ticketCost;
+@synthesize firstTimeBuyerPrice , firstTimeBuyerDiscount;
 -(id)init
 {
     self = [super init];
     if (self != nil) {
         //sets values to my properties
-        [self setNumberOfSeats:2];
-        [self setTicketPricePerSeat:5200.00];
-        [self setTax:30.00];
+        [self setSeats:2];
+        [self setTicketPricePerSeat:5200];
+        [self setFirstTimeBuyerPrice:4400];
+        [self setFirstTimeBuyerDiscount:800];
         [self setSection:@"Floor"];
+        
+        
         
         
     }
@@ -27,8 +31,9 @@
 //calculation method for manipulation of values
 -(void)calculateTotalTicketPrice
 {
-    NSLog(@"ticket price is %.2f", self.ticketPricePerSeat);
-    [self setTotalPriceForTickets:(ticketPricePerSeat + Tax) ];//sets totalPriceForTickets to the value of the added values
-     NSLog(@" season tickets are %f", self.totalPriceForTickets);
+  
+    NSLog(@"ticket price is %.2f", self.totalPriceForSeasonTickets);
+    [self setTotalPriceForSeasonTickets:( firstTimeBuyerPrice - firstTimeBuyerDiscount * seats ) ];//sets totalPriceForTickets to the value of the added values
+     NSLog(@" season tickets are %.2f", self.totalPriceForSeasonTickets);
 }
 @end

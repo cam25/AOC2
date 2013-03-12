@@ -19,17 +19,22 @@ typedef enum{//enum sets type to default at 0
 @interface BaseTickets : NSObject
 {
     ticketEnum ticketEnum;
-    
+    int seats;
+    float Tax;
+    float totalTicketPricePerSeat;
+    float ticketPricePerSeat;
+    NSString *section;
  
 }
 
 //properties / base data members to be used in subclasses
 
 @property NSString *section;
-@property float ticketCost;
 @property float Tax;
 @property int seats;
+@property float toalTicketPricePerSeat;
 @property float ticketPricePerSeat;
+
 
 //initialize
 -(id)init;

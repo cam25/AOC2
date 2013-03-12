@@ -8,7 +8,7 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "camsApp2/ViewController.m"
-         timestampString = "384121962.358718"
+         timestampString = "384743153.761116"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "19"
@@ -21,11 +21,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "camsApp2/BaseTickets.h"
-         timestampString = "384201006.055498"
+         timestampString = "384725415.349893"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "28"
-         endingLineNumber = "28"
+         startingLineNumber = "32"
+         endingLineNumber = "32"
          landmarkName = "section"
          landmarkType = "19">
       </FileBreakpoint>
@@ -34,11 +34,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "camsApp2/seasonTickets.m"
-         timestampString = "384380883.097608"
+         timestampString = "384725415.349893"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "31"
-         endingLineNumber = "31"
+         startingLineNumber = "36"
+         endingLineNumber = "36"
          landmarkName = "-calculateTotalTicketPrice"
          landmarkType = "5">
       </FileBreakpoint>
@@ -47,7 +47,20 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "camsApp2/seasonTickets.m"
-         timestampString = "384380883.097608"
+         timestampString = "384725415.349893"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "37"
+         endingLineNumber = "37"
+         landmarkName = "-calculateTotalTicketPrice"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "camsApp2/seasonTickets.m"
+         timestampString = "384725415.349893"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "32"
@@ -60,11 +73,37 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "camsApp2/seasonTickets.m"
-         timestampString = "384380883.097608"
+         timestampString = "384713064.213512"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "28"
-         endingLineNumber = "28"
+         startingLineNumber = "13"
+         endingLineNumber = "13"
+         landmarkName = "@synthesize firstTimeBuyerPrice , firstTimeBuyerDiscount;"
+         landmarkType = "19">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "camsApp2/groupTickets.m"
+         timestampString = "384717336.133211"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "13"
+         endingLineNumber = "13"
+         landmarkName = "@synthesize partyOfFive,partyOfTen;"
+         landmarkType = "19">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "camsApp2/vipTickets.m"
+         timestampString = "384724014.635388"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "38"
+         endingLineNumber = "38"
          landmarkName = "-calculateTotalTicketPrice"
          landmarkType = "5">
       </FileBreakpoint>
@@ -73,25 +112,12 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "camsApp2/ViewController.m"
-         timestampString = "384293681.346227"
+         timestampString = "384744558.884181"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "35"
-         endingLineNumber = "35"
-         landmarkName = "-viewDidLoad"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "camsApp2/ViewController.m"
-         timestampString = "384293681.346227"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "78"
-         endingLineNumber = "78"
-         landmarkName = "-viewDidLoad"
+         startingLineNumber = "33"
+         endingLineNumber = "33"
+         landmarkName = "-onClick:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

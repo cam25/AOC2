@@ -9,16 +9,29 @@
 #import <UIKit/UIKit.h>
 #import "ticketFactory.h" //imports ticket factory
 @class BaseTickets; //Base ticket class
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITextFieldDelegate>
 {
-    UILabel *header;
-    BaseTickets *baseTickets;
-    UILabel *seasonLabel;
-    UILabel *seasonCalculation;
-    UILabel *vipLabel;
-    UILabel *vipCalculation;
-    UILabel *groupLabel;
-    UILabel *groupCalculation;
+ 
+    UILabel *label1;
+    IBOutlet UILabel *label2;
+    IBOutlet UITextField *categoryInput;
+    IBOutlet UIStepper *counter;
+    IBOutlet UIButton *seasonTickButn;
+    IBOutlet UIButton *vipTickButn;
+    IBOutlet UIButton *groupTickButn;
     
+
 }
+
+-(IBAction)onClick:(id)sender;
 @end
+/*
+ UILabel *header;
+ BaseTickets *baseTickets;
+ UILabel *seasonLabel;
+ UILabel *seasonCalculation;
+ UILabel *vipLabel;
+ UILabel *vipCalculation;
+ UILabel *groupLabel;
+ UILabel *groupCalculation;
+ */

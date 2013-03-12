@@ -9,10 +9,10 @@
 #import "vipTickets.h"
 
 @implementation vipTickets
-@synthesize ticketPricePerSeat, Tax, section, skyBoxUpgradePrice, upgradeDiscount, totalUpgradePurchase;
+@synthesize  skyBoxUpgradePrice, upgradeDiscount, totalUpgradePurchase;
 
 -(id)init{
-
+    
     self = [super init];
     if(self != nil)
     {
@@ -23,7 +23,7 @@
         [self setSkyBoxUpgradePrice:200.55];
         [self setUpgradeDiscount:10];
         
-
+        
         NSLog(@"You have chosen skybox upgrade");
         
     }
@@ -34,8 +34,9 @@
 
 -(void)calculateTotalTicketPrice
 {
-    [self setTotalUpgradePurchase:(skyBoxUpgradePrice + ticketPricePerSeat - upgradeDiscount)];
-     NSLog(@"You spent %f upgrading to skybox", self.totalUpgradePurchase);
+    
+    [self setTotalUpgradePurchase:(skyBoxUpgradePrice + Tax  - upgradeDiscount)];
+    NSLog(@"You spent %f upgrading to skybox", self.totalUpgradePurchase);
 }
 
 @end
