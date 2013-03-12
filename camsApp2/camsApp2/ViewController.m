@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "BaseTickets.h"
+#import "ViewControllerTwo.h"
 @interface ViewController ()
 
 @end
@@ -51,7 +52,14 @@
         }
     }
 }
-
+-(IBAction)infoClick:(id)sender
+{
+    ViewControllerTwo *newViewControl = [[ViewControllerTwo alloc] initWithNibName:@"SecondView" bundle:nil];
+    if (newViewControl != nil) {
+        [self presentViewController:newViewControl animated:TRUE completion:nil];
+        
+    }
+}
 @end
 /*
  // top label

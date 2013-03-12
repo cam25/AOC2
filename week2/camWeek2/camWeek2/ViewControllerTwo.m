@@ -39,5 +39,8 @@
     // dismiss the view
     [self dismissViewControllerAnimated:YES completion:nil];
 }
-
+-(IBAction)onClose:(id)sender
+{
+    [self dismissViewControllerAnimated:TRUE completion:Nil];
+}
 @end

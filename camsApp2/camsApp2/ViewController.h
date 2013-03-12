@@ -19,11 +19,16 @@
     IBOutlet UIButton *seasonTickButn;
     IBOutlet UIButton *vipTickButn;
     IBOutlet UIButton *groupTickButn;
+    IBOutlet UIButton *calculateTickCost;
+    IBOutlet UISegmentedControl *baseColor;
+    IBOutlet UIButton *infoButton;
+    
     
 
 }
 
 -(IBAction)onClick:(id)sender;
+-(IBAction)infoClick:(id)sender;
 @end
 /*
  UILabel *header;
