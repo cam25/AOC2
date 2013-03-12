@@ -59,6 +59,36 @@
         [self presentViewController:newViewControl animated:TRUE completion:nil];
         
     }
+
+}
+
+-(IBAction)onStepperClick:(id)sender
+{
+    
+    if (counter != nil) {
+        
+        int currentValue = counter.value;
+        labelView.text = [NSString stringWithFormat:@"step value is = %d", currentValue];
+        
+    }
+}
+
+-(IBAction)segmentChange:(id)sender
+{
+    UISegmentedControl *segmentControl = (UISegmentedControl*)sender;
+        if (segmentControl != nil)
+        {
+            int selectedIndex = segmentControl.selectedSegmentIndex;
+            
+            
+            if (selectedIndex == 0) {
+                self.view.backgroundColor = [UIColor colorWithRed:160/255.0f green:67/255.0f blue:0/255.0f alpha:1.0f];
+            }else if (selectedIndex == 1)
+            {
+                self.view.backgroundColor = [UIColor cyanColor ];
+            }else if (selectedIndex == 2)
+                self.view.backgroundColor = [UIColor colorWithRed:225/255.0f green:175/255.0f blue:11/255.0f alpha:1.0f];
+        }
 }
 @end
 /*

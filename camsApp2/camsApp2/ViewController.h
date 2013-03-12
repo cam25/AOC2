@@ -14,7 +14,7 @@
  
     UILabel *label1;
     IBOutlet UILabel *label2;
-    IBOutlet UITextField *categoryInput;
+    IBOutlet UILabel *labelView;
     IBOutlet UIStepper *counter;
     IBOutlet UIButton *seasonTickButn;
     IBOutlet UIButton *vipTickButn;
@@ -22,6 +22,7 @@
     IBOutlet UIButton *calculateTickCost;
     IBOutlet UISegmentedControl *baseColor;
     IBOutlet UIButton *infoButton;
+    IBOutlet UITextField *categoryInput;
     
     
 
@@ -29,6 +30,8 @@
 
 -(IBAction)onClick:(id)sender;
 -(IBAction)infoClick:(id)sender;
+-(IBAction)onStepperClick:(id)sender;
+-(IBAction)segmentChange:(id)sender;
 @end
 /*
  UILabel *header;
