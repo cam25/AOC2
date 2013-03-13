@@ -15,15 +15,16 @@
 
 @implementation ViewController
 
-typedef enum {
+typedef enum {//enums for segment toggle
     CYAN = 0,
     BURGANDY,
     GOLD
 }colorDef;
+
 - (void)viewDidLoad
 {
     label1.text = @"Cameron's Ticket Purchaser";
-    label2.text = @"Ticket Category";
+    label2.text = @"Ticket Total";
  
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
@@ -39,22 +40,22 @@ typedef enum {
 {
     
     if (counter != nil) {
-        
+
         int counterAdd = counter.value;
-        if (seasonTickButn.enabled && vipTickButn.enabled  && groupTickButn.enabled == true) {
+        if (seasonTickButn.enabled && vipTickButn.enabled  && groupTickButn.enabled == true) {//if buttons enabled are true show counter value in text field
             
             categoryInput.text = [NSString stringWithFormat:@"%d", counterAdd];
         }else if(seasonTickButn.enabled == false)
         {
-            categoryInput.text = [NSString stringWithFormat:@"Season %d", counterAdd];
+            categoryInput.text = [NSString stringWithFormat:@"Number of Seats %d", counterAdd];//inputs text into text field
         }else if (vipTickButn.enabled == false)
         {
-            categoryInput.text = [NSString stringWithFormat:@"vip %d", counterAdd];
+            categoryInput.text = [NSString stringWithFormat:@"Number of Seats %d", counterAdd];
         }else if (groupTickButn.enabled == false)
         {
-            categoryInput.text = [NSString stringWithFormat:@"group %d", counterAdd];
+            categoryInput.text = [NSString stringWithFormat:@"Number of Seats %d", counterAdd];
         }
-        
+    
         
     }
 }
@@ -63,43 +64,60 @@ typedef enum {
 {
     UIButton *button = (UIButton*)sender;
     if (button !=nil) {
-        if (button.tag == 0) {
+        
+       
+        if (button.tag == 0) {//first button index
             
-            int counterAdd = counter.value;
+            if (seasonTickButn.enabled  == true) {//if button is enabled enable stepper
+                counter.enabled = true;
+            }else{
+                counter.enabled = false;
+            }
+            int counterAdd = counter.value; //sets counter value to an int 
             seasonTickButn.enabled = false;
             vipTickButn.enabled = true;
             groupTickButn.enabled = true;
-            labelView.text = [NSString stringWithFormat:@"season ticket %d", counterAdd];
-            categoryInput.text = [NSString stringWithFormat:@"seasonticket %d", counterAdd];
+            labelView.text = @"Season Tickets";
+            categoryInput.text = [NSString stringWithFormat:@"Season Tickets with %d seats", counterAdd];
             
             
             
             NSLog(@"you pressed season button");
             
-        } else if (button.tag == 1) {
-            
+        } else if (button.tag == 1) { // second button index
+            if (vipTickButn.enabled  == true) {
+                counter.enabled = true;
+            }else{
+                counter.enabled = false;
+            }
+          
             int counterAdd = counter.value;
-            labelView.text = [NSString stringWithFormat:@"vip ticket %d", counterAdd];
+            labelView.text = @"VIP ticket";
 
-            categoryInput.text = [NSString stringWithFormat:@"vip tickets %d", counterAdd];
+            categoryInput.text = [NSString stringWithFormat:@"VIP Tickets with %d seats", counterAdd];
             
             seasonTickButn.enabled = true;
             vipTickButn.enabled = false;
             groupTickButn.enabled = true;
             
-            groupTickButn.enabled = true;
+          
             NSLog(@"you pressed vip button");
             
-        }else if (button.tag == 2)
+        }else if (button.tag == 2)//third button index
             
         {
+            if (groupTickButn.enabled  == true) {//if group button enabled enable stepper
+                counter.enabled = true;
+            }else{
+                counter.enabled = false;
+            }
             int counterAdd = counter.value;
             seasonTickButn.enabled = true;
             vipTickButn.enabled = true;
             groupTickButn.enabled = false;
-            labelView.text = [NSString stringWithFormat:@"group ticket %d", counterAdd];
+            labelView.text = @"Group Tickets";
 
-            categoryInput.text = [NSString stringWithFormat:@"group tickets %d", counterAdd];
+            categoryInput.text = [NSString stringWithFormat:@"Group Tickets with %d seats", counterAdd];
             NSLog(@"you pressed group button");
         }
     }
@@ -121,10 +139,11 @@ typedef enum {
     UISegmentedControl *segmentControl = (UISegmentedControl*)sender;
         if (segmentControl != nil)
         {
-            int selectedIndex = segmentControl.selectedSegmentIndex;
+            
+            int selectedIndex = segmentControl.selectedSegmentIndex;//gets segment index
             
             
-            switch (selectedIndex) {
+            switch (selectedIndex) {//change color on toggle for specific seg index
                 case BURGANDY:
                     self.view.backgroundColor = [UIColor colorWithRed:160/255.0f green:67/255.0f blue:0/255.0f alpha:1.0f];
                     break;
@@ -147,8 +166,18 @@ typedef enum {
 {
     int counterAdd = counter.value;
     
-    categoryInput.text = [NSString stringWithFormat:@"Total price is %d", counterAdd];
-  
+    categoryInput.text = [NSString stringWithFormat:@"Total price is %d", counterAdd]; //sets text in textfield to count value
+    if (seasonTickButn.enabled == false)
+    {
+        seasonTickets *getSeasonTickets = (seasonTickets*)[ticketFactory buyNewTicket:season]; //season ticket method from factory
+        [getSeasonTickets totalPriceForSeasonTickets]; //total from season ticket calculation
+        [getSeasonTickets calculateTotalTicketPrice]; // calculate call
+        int seasonTicketTotal =  getSeasonTickets.totalPriceForSeasonTickets * counterAdd; //set seasonTicketTotal to an int that grabs total price of season of tickets and multiplies times the value from the stepper
+        
+        categoryInput.text = [NSString stringWithFormat:@"%d for %d Seats",seasonTicketTotal, counterAdd];//sets text in textfield 
+        
+        
+    }
 }
 
 @end
