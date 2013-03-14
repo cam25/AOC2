@@ -51,10 +51,7 @@ typedef enum {//enums for segment toggle
     if (counter != nil) {
 
         int counterAdd = counter.value;
-        if (seasonTickButn.enabled && vipTickButn.enabled  && groupTickButn.enabled == true) {//if buttons enabled are true show counter value in text field
-            
-            categoryInput.text = [NSString stringWithFormat:@"%d", counterAdd];
-        }else if(seasonTickButn.enabled == false)
+         if(seasonTickButn.enabled == false)//if button is not enabled show stepper
         {
             categoryInput.text = [NSString stringWithFormat:@"Number of Seats %d", counterAdd];//inputs value from stepper into text field
         }else if (vipTickButn.enabled == false)

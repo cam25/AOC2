@@ -10,4 +10,7 @@
 
 @interface ViewControllerTwo : UIViewController
 //add comment
+-(IBAction)onClick:(id)sender;
+-(IBAction)onClose:(id)sender;
+
 @end
