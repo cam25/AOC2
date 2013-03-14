@@ -25,9 +25,18 @@ typedef enum {//enums for segment toggle
 {
     label1.text = @"Cameron's Ticket Purchaser";
     label2.text = @"Ticket Total";
- 
+    
+    //info button
+    UIButton *nfoButton = [UIButton buttonWithType:UIButtonTypeInfoDark];
+    if (nfoButton != nil) {
+        nfoButton.frame = CGRectMake(290.0f, 0.0f, 20.0f, 100.0f);
+        [nfoButton addTarget:self action:@selector(infoClick:) forControlEvents:UIControlEventTouchUpInside];
+        
+        [self.view addSubview:nfoButton];
+    }
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -47,13 +56,15 @@ typedef enum {//enums for segment toggle
             categoryInput.text = [NSString stringWithFormat:@"%d", counterAdd];
         }else if(seasonTickButn.enabled == false)
         {
-            categoryInput.text = [NSString stringWithFormat:@"Number of Seats %d", counterAdd];//inputs text into text field
+            categoryInput.text = [NSString stringWithFormat:@"Number of Seats %d", counterAdd];//inputs value from stepper into text field
         }else if (vipTickButn.enabled == false)
         {
-            categoryInput.text = [NSString stringWithFormat:@"Number of Seats %d", counterAdd];
+            categoryInput.text = [NSString stringWithFormat:@"Number of Seats %d", counterAdd];//inputs value from stepper into text field
+
         }else if (groupTickButn.enabled == false)
         {
-            categoryInput.text = [NSString stringWithFormat:@"Number of Seats %d", counterAdd];
+            categoryInput.text = [NSString stringWithFormat:@"Number of Seats %d", counterAdd];//inputs value from stepper into text field
+
         }
     
         
@@ -70,6 +81,8 @@ typedef enum {//enums for segment toggle
             
             if (seasonTickButn.enabled  == true) {//if button is enabled enable stepper
                 counter.enabled = true;
+                counter.minimumValue = 1;
+                counter.maximumValue = 10;
             }else{
                 counter.enabled = false;
             }
@@ -87,6 +100,8 @@ typedef enum {//enums for segment toggle
         } else if (button.tag == 1) { // second button index
             if (vipTickButn.enabled  == true) {
                 counter.enabled = true;
+                counter.minimumValue = 1;
+                counter.maximumValue = 10;
             }else{
                 counter.enabled = false;
             }
@@ -108,8 +123,11 @@ typedef enum {//enums for segment toggle
         {
             if (groupTickButn.enabled  == true) {//if group button enabled enable stepper
                 counter.enabled = true;
+                counter.minimumValue = 5;
+                counter.maximumValue = 10;
             }else{
                 counter.enabled = false;
+                
             }
             int counterAdd = counter.value;
             seasonTickButn.enabled = true;
@@ -119,10 +137,11 @@ typedef enum {//enums for segment toggle
 
             categoryInput.text = [NSString stringWithFormat:@"Group Tickets with %d seats", counterAdd];
             NSLog(@"you pressed group button");
+            
         }
     }
 }
--(IBAction)infoClick:(id)sender
+-(IBAction)infoClick:(id)sender//second view
 {
     ViewControllerTwo *newViewControl = [[ViewControllerTwo alloc] initWithNibName:@"SecondView" bundle:nil];
     if (newViewControl != nil) {
@@ -144,12 +163,12 @@ typedef enum {//enums for segment toggle
             
             
             switch (selectedIndex) {//change color on toggle for specific seg index
-                case BURGANDY:
-                    self.view.backgroundColor = [UIColor colorWithRed:160/255.0f green:67/255.0f blue:0/255.0f alpha:1.0f];
+                case CYAN:
+                    self.view.backgroundColor = [UIColor cyanColor ];
                     break;
                     
-                    case CYAN:
-                    self.view.backgroundColor = [UIColor cyanColor ];
+                    case BURGANDY:
+                    self.view.backgroundColor = [UIColor colorWithRed:160/255.0f green:67/255.0f blue:0/255.0f alpha:1.0f];
                     break;
                     
                     case GOLD:
@@ -175,6 +194,23 @@ typedef enum {//enums for segment toggle
         int seasonTicketTotal =  getSeasonTickets.totalPriceForSeasonTickets * counterAdd; //set seasonTicketTotal to an int that grabs total price of season of tickets and multiplies times the value from the stepper
         
         categoryInput.text = [NSString stringWithFormat:@"%d for %d Seats",seasonTicketTotal, counterAdd];//sets text in textfield 
+        
+        
+    }else if (vipTickButn.enabled == false)
+    {
+        vipTickets *getVipTickets = (vipTickets*)[ticketFactory buyNewTicket:vip];//vip method from ticket factory
+        [getVipTickets totalUpgradePurchase];//total price for upgrade
+        [getVipTickets calculateTotalTicketPrice];//calculate total call
+        int vipTicketTotal = getVipTickets.totalUpgradePurchase * counterAdd;
+        categoryInput.text = [NSString stringWithFormat:@"%d for %d Seats",vipTicketTotal, counterAdd];
+        
+    }else if (groupTickButn.enabled == false)
+    {
+        groupTickets *getGroupTickets = (groupTickets*)[ticketFactory buyNewTicket:group];
+        [getGroupTickets totalPriceOfFiveGroupTickets];
+        [getGroupTickets calculateTotalTicketPrice];
+        int groupTicketTotal = getGroupTickets.toalTicketPricePerSeat * counterAdd;
+        categoryInput.text = [NSString stringWithFormat:@"%d for %d Seats",groupTicketTotal, counterAdd];
         
         
     }

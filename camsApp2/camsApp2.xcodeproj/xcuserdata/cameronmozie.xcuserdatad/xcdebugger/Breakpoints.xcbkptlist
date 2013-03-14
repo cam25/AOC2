@@ -112,11 +112,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "camsApp2/ViewController.m"
-         timestampString = "384814802.976258"
+         timestampString = "384891600.731137"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "64"
-         endingLineNumber = "64"
+         startingLineNumber = "75"
+         endingLineNumber = "75"
          landmarkName = "-onClick:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -125,11 +125,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "camsApp2/ViewController.m"
-         timestampString = "384814802.976258"
+         timestampString = "384892959.219112"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "126"
-         endingLineNumber = "126"
+         startingLineNumber = "145"
+         endingLineNumber = "145"
          landmarkName = "-infoClick:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -138,11 +138,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "camsApp2/ViewController.m"
-         timestampString = "384814802.976258"
+         timestampString = "384892959.219112"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "130"
-         endingLineNumber = "130"
+         startingLineNumber = "149"
+         endingLineNumber = "149"
          landmarkName = "-infoClick:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -151,11 +151,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "camsApp2/ViewController.m"
-         timestampString = "384814802.976258"
+         timestampString = "384892959.219112"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "128"
-         endingLineNumber = "128"
+         startingLineNumber = "147"
+         endingLineNumber = "147"
          landmarkName = "-infoClick:"
          landmarkType = "5">
       </FileBreakpoint>
