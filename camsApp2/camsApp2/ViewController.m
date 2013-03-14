@@ -23,7 +23,7 @@ typedef enum {//enums for segment toggle
 
 - (void)viewDidLoad
 {
-    label1.text = @"Cameron's Ticket Purchaser";
+    
     label2.text = @"Ticket Total";
     
     //info button
