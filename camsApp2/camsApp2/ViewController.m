@@ -171,7 +171,7 @@ typedef enum {//enums for segment toggle
                     case GOLD:
                     
                 default:
-                    self.view.backgroundColor = [UIColor colorWithRed:225/255.0f green:175/255.0f blue:11/255.0f alpha:1.0f];
+           ;
                     break;
             }
             
