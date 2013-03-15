@@ -10,6 +10,24 @@
 		110BCA9516F2B6A800F4AE63 /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 110BCA9416F2B6A800F4AE63 /* SecondView.xib */; };
 		110BCA9816F2B6C100F4AE63 /* ViewControllerTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 110BCA9716F2B6C100F4AE63 /* ViewControllerTwo.m */; };
 		110BCA9A16F2B6D900F4AE63 /* 2012-04-15 14.38.24.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 110BCA9916F2B6D800F4AE63 /* 2012-04-15 14.38.24.jpg */; };
+		110BCABA16F2B82600F4AE63 /* 2012-04-15 14.38.24.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 110BCA9C16F2B82600F4AE63 /* 2012-04-15 14.38.24.jpg */; };
+		110BCABB16F2B82600F4AE63 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 110BCA9E16F2B82600F4AE63 /* AppDelegate.m */; };
+		110BCABC16F2B82600F4AE63 /* BaseTickets.m in Sources */ = {isa = PBXBuildFile; fileRef = 110BCAA016F2B82600F4AE63 /* BaseTickets.m */; };
+		110BCABD16F2B82600F4AE63 /* camsApp2-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 110BCAA116F2B82600F4AE63 /* camsApp2-Info.plist */; };
+		110BCABE16F2B82600F4AE63 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 110BCAA316F2B82600F4AE63 /* Default-568h@2x.png */; };
+		110BCABF16F2B82600F4AE63 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 110BCAA416F2B82600F4AE63 /* Default.png */; };
+		110BCAC016F2B82600F4AE63 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 110BCAA516F2B82600F4AE63 /* Default@2x.png */; };
+		110BCAC116F2B82600F4AE63 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 110BCAA616F2B82600F4AE63 /* InfoPlist.strings */; };
+		110BCAC216F2B82600F4AE63 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 110BCAA816F2B82600F4AE63 /* ViewController_iPad.xib */; };
+		110BCAC316F2B82600F4AE63 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 110BCAAA16F2B82600F4AE63 /* ViewController_iPhone.xib */; };
+		110BCAC416F2B82600F4AE63 /* groupTickets.m in Sources */ = {isa = PBXBuildFile; fileRef = 110BCAAD16F2B82600F4AE63 /* groupTickets.m */; };
+		110BCAC516F2B82600F4AE63 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 110BCAAE16F2B82600F4AE63 /* main.m */; };
+		110BCAC616F2B82600F4AE63 /* seasonTickets.m in Sources */ = {isa = PBXBuildFile; fileRef = 110BCAB016F2B82600F4AE63 /* seasonTickets.m */; };
+		110BCAC716F2B82600F4AE63 /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 110BCAB116F2B82600F4AE63 /* SecondView.xib */; };
+		110BCAC816F2B82600F4AE63 /* ticketFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 110BCAB316F2B82600F4AE63 /* ticketFactory.m */; };
+		110BCAC916F2B82600F4AE63 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 110BCAB516F2B82600F4AE63 /* ViewController.m */; };
+		110BCACA16F2B82600F4AE63 /* ViewControllerTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 110BCAB716F2B82600F4AE63 /* ViewControllerTwo.m */; };
+		110BCACB16F2B82600F4AE63 /* vipTickets.m in Sources */ = {isa = PBXBuildFile; fileRef = 110BCAB916F2B82600F4AE63 /* vipTickets.m */; };
 		1148D7A616E475A6006EBFB7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1148D7A516E475A6006EBFB7 /* UIKit.framework */; };
 		1148D7A816E475A6006EBFB7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1148D7A716E475A6006EBFB7 /* Foundation.framework */; };
 		1148D7AA16E475A6006EBFB7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1148D7A916E475A6006EBFB7 /* CoreGraphics.framework */; };
@@ -49,6 +67,33 @@
 		110BCA9616F2B6B300F4AE63 /* ViewControllerTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerTwo.h; sourceTree = "<group>"; };
 		110BCA9716F2B6C100F4AE63 /* ViewControllerTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerTwo.m; sourceTree = "<group>"; };
 		110BCA9916F2B6D800F4AE63 /* 2012-04-15 14.38.24.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "2012-04-15 14.38.24.jpg"; sourceTree = "<group>"; };
+		110BCA9C16F2B82600F4AE63 /* 2012-04-15 14.38.24.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "2012-04-15 14.38.24.jpg"; sourceTree = "<group>"; };
+		110BCA9D16F2B82600F4AE63 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		110BCA9E16F2B82600F4AE63 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		110BCA9F16F2B82600F4AE63 /* BaseTickets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTickets.h; sourceTree = "<group>"; };
+		110BCAA016F2B82600F4AE63 /* BaseTickets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTickets.m; sourceTree = "<group>"; };
+		110BCAA116F2B82600F4AE63 /* camsApp2-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "camsApp2-Info.plist"; sourceTree = "<group>"; };
+		110BCAA216F2B82600F4AE63 /* camsApp2-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "camsApp2-Prefix.pch"; sourceTree = "<group>"; };
+		110BCAA316F2B82600F4AE63 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		110BCAA416F2B82600F4AE63 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		110BCAA516F2B82600F4AE63 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		110BCAA716F2B82600F4AE63 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		110BCAA916F2B82600F4AE63 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		110BCAAB16F2B82600F4AE63 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
+		110BCAAC16F2B82600F4AE63 /* groupTickets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = groupTickets.h; sourceTree = "<group>"; };
+		110BCAAD16F2B82600F4AE63 /* groupTickets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = groupTickets.m; sourceTree = "<group>"; };
+		110BCAAE16F2B82600F4AE63 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		110BCAAF16F2B82600F4AE63 /* seasonTickets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = seasonTickets.h; sourceTree = "<group>"; };
+		110BCAB016F2B82600F4AE63 /* seasonTickets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = seasonTickets.m; sourceTree = "<group>"; };
+		110BCAB116F2B82600F4AE63 /* SecondView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondView.xib; sourceTree = "<group>"; };
+		110BCAB216F2B82600F4AE63 /* ticketFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ticketFactory.h; sourceTree = "<group>"; };
+		110BCAB316F2B82600F4AE63 /* ticketFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ticketFactory.m; sourceTree = "<group>"; };
+		110BCAB416F2B82600F4AE63 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		110BCAB516F2B82600F4AE63 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		110BCAB616F2B82600F4AE63 /* ViewControllerTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerTwo.h; sourceTree = "<group>"; };
+		110BCAB716F2B82600F4AE63 /* ViewControllerTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerTwo.m; sourceTree = "<group>"; };
+		110BCAB816F2B82600F4AE63 /* vipTickets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vipTickets.h; sourceTree = "<group>"; };
+		110BCAB916F2B82600F4AE63 /* vipTickets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vipTickets.m; sourceTree = "<group>"; };
 		1148D7A216E475A6006EBFB7 /* camsApp2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = camsApp2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1148D7A516E475A6006EBFB7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1148D7A716E475A6006EBFB7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -108,6 +153,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		110BCA9B16F2B82600F4AE63 /* camsApp2 */ = {
+			isa = PBXGroup;
+			children = (
+				110BCA9C16F2B82600F4AE63 /* 2012-04-15 14.38.24.jpg */,
+				110BCA9D16F2B82600F4AE63 /* AppDelegate.h */,
+				110BCA9E16F2B82600F4AE63 /* AppDelegate.m */,
+				110BCA9F16F2B82600F4AE63 /* BaseTickets.h */,
+				110BCAA016F2B82600F4AE63 /* BaseTickets.m */,
+				110BCAA116F2B82600F4AE63 /* camsApp2-Info.plist */,
+				110BCAA216F2B82600F4AE63 /* camsApp2-Prefix.pch */,
+				110BCAA316F2B82600F4AE63 /* Default-568h@2x.png */,
+				110BCAA416F2B82600F4AE63 /* Default.png */,
+				110BCAA516F2B82600F4AE63 /* Default@2x.png */,
+				110BCAA616F2B82600F4AE63 /* InfoPlist.strings */,
+				110BCAA816F2B82600F4AE63 /* ViewController_iPad.xib */,
+				110BCAAA16F2B82600F4AE63 /* ViewController_iPhone.xib */,
+				110BCAAC16F2B82600F4AE63 /* groupTickets.h */,
+				110BCAAD16F2B82600F4AE63 /* groupTickets.m */,
+				110BCAAE16F2B82600F4AE63 /* main.m */,
+				110BCAAF16F2B82600F4AE63 /* seasonTickets.h */,
+				110BCAB016F2B82600F4AE63 /* seasonTickets.m */,
+				110BCAB116F2B82600F4AE63 /* SecondView.xib */,
+				110BCAB216F2B82600F4AE63 /* ticketFactory.h */,
+				110BCAB316F2B82600F4AE63 /* ticketFactory.m */,
+				110BCAB416F2B82600F4AE63 /* ViewController.h */,
+				110BCAB516F2B82600F4AE63 /* ViewController.m */,
+				110BCAB616F2B82600F4AE63 /* ViewControllerTwo.h */,
+				110BCAB716F2B82600F4AE63 /* ViewControllerTwo.m */,
+				110BCAB816F2B82600F4AE63 /* vipTickets.h */,
+				110BCAB916F2B82600F4AE63 /* vipTickets.m */,
+			);
+			name = camsApp2;
+			sourceTree = "<group>";
+		};
 		1148D79916E475A6006EBFB7 = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +241,7 @@
 				110BCA9616F2B6B300F4AE63 /* ViewControllerTwo.h */,
 				110BCA9916F2B6D800F4AE63 /* 2012-04-15 14.38.24.jpg */,
 				110BCA9416F2B6A800F4AE63 /* SecondView.xib */,
+				110BCA9B16F2B82600F4AE63 /* camsApp2 */,
 			);
 			path = camsApp2;
 			sourceTree = "<group>";
@@ -278,6 +358,15 @@
 				1148D7C516E475A6006EBFB7 /* ViewController_iPad.xib in Resources */,
 				110BCA9516F2B6A800F4AE63 /* SecondView.xib in Resources */,
 				110BCA9A16F2B6D900F4AE63 /* 2012-04-15 14.38.24.jpg in Resources */,
+				110BCABA16F2B82600F4AE63 /* 2012-04-15 14.38.24.jpg in Resources */,
+				110BCABD16F2B82600F4AE63 /* camsApp2-Info.plist in Resources */,
+				110BCABE16F2B82600F4AE63 /* Default-568h@2x.png in Resources */,
+				110BCABF16F2B82600F4AE63 /* Default.png in Resources */,
+				110BCAC016F2B82600F4AE63 /* Default@2x.png in Resources */,
+				110BCAC116F2B82600F4AE63 /* InfoPlist.strings in Resources */,
+				110BCAC216F2B82600F4AE63 /* ViewController_iPad.xib in Resources */,
+				110BCAC316F2B82600F4AE63 /* ViewController_iPhone.xib in Resources */,
+				110BCAC716F2B82600F4AE63 /* SecondView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +410,15 @@
 				1148D7F116E560CA006EBFB7 /* groupTickets.m in Sources */,
 				1148D7F416E63FF0006EBFB7 /* ticketFactory.m in Sources */,
 				110BCA9816F2B6C100F4AE63 /* ViewControllerTwo.m in Sources */,
+				110BCABB16F2B82600F4AE63 /* AppDelegate.m in Sources */,
+				110BCABC16F2B82600F4AE63 /* BaseTickets.m in Sources */,
+				110BCAC416F2B82600F4AE63 /* groupTickets.m in Sources */,
+				110BCAC516F2B82600F4AE63 /* main.m in Sources */,
+				110BCAC616F2B82600F4AE63 /* seasonTickets.m in Sources */,
+				110BCAC816F2B82600F4AE63 /* ticketFactory.m in Sources */,
+				110BCAC916F2B82600F4AE63 /* ViewController.m in Sources */,
+				110BCACA16F2B82600F4AE63 /* ViewControllerTwo.m in Sources */,
+				110BCACB16F2B82600F4AE63 /* vipTickets.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +441,30 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		110BCAA616F2B82600F4AE63 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				110BCAA716F2B82600F4AE63 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		110BCAA816F2B82600F4AE63 /* ViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				110BCAA916F2B82600F4AE63 /* en */,
+			);
+			name = ViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+		110BCAAA16F2B82600F4AE63 /* ViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				110BCAAB16F2B82600F4AE63 /* en */,
+			);
+			name = ViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
 		1148D7AE16E475A6006EBFB7 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
