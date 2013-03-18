@@ -39,9 +39,10 @@
     }
 }
 
--(void)DidClose:(NSString *)nameString
+-(void)DidClose:(NSString*)nameString closeDate:(NSString*)dateClose
 {
-    textField.text = nameString;
+    combinedStrings = [NSString stringWithFormat:@"\n %@ due on \n %@\n", nameString, dateClose];
+    textField.text =[textField.text stringByAppendingString:combinedStrings];
 }
 
 -(IBAction)timeChange:(id)sender

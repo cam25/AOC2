@@ -18,7 +18,16 @@
 
 -(IBAction)timeChange:(id)sender
 {
+    UIDatePicker *datePick = (UIDatePicker*) sender;
+    
+    NSDate *date = datePick.date;
+  
  
+    
+    NSDateFormatter *formatDate = [[NSDateFormatter alloc] init];
+    [formatDate setDateFormat:@"EEE, MMM d, yyyy hh:mm a"];
+    NSString *stringDate = [formatDate stringFromDate:date];
+    NSLog(@"%@", stringDate);
 }
 
 
@@ -44,31 +53,22 @@
 }
 -(IBAction)save:(id)sender
 {
-    if (saveBtn.tag == 0) {
-        
-        
-        
-        NSString *tempString = textInfo.text;
-        NSLog(@"%@", tempString);
-        
-        if (saveBtn.tag == 0) {
+    
+    if ([sender tag] == 0) {
             
-            UIDatePicker *datePick = (UIDatePicker*) sender;
-            
-            NSDate *date = datePick.date;
-            NSLog(@"date =%@",[date description]);
+      
             
             NSString *tempString = textInfo.text;
             NSLog(@"%@", tempString);
             
-            NSDateFormatter *formatDate = [[NSDateFormatter alloc] init];
-            [formatDate setDateFormat:@"EEE, MMM d, yyyy hh:mm a"];
-            NSString *stringDate = [formatDate stringFromDate:date];
-            NSLog(@"%@", stringDate);
+           
             
+        }else{
+            
+            [self dismissViewControllerAnimated:true completion:nil];
         }
         
-    }
+    
 }
 -(IBAction)closeKeyboard:(id)sender
 {
