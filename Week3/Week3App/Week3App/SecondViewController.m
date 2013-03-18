@@ -14,6 +14,16 @@
 
 @implementation SecondViewController
 
+-(IBAction)timeChange:(id)sender
+{
+    UIDatePicker *datePick = (UIDatePicker*) sender;
+    if (datePick != nil)
+    {
+        NSDate *date = datePick.date;
+        NSLog(@"date =%@",[date description]);
+    }
+}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];

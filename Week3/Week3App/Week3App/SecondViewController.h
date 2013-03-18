@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface SecondViewController : UIViewController
+{
+    
+}
+-(IBAction)timeChange:(id)sender;
 
 @end

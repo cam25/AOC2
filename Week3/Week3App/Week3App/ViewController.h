@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITextFieldDelegate>
 {
     IBOutlet UIButton *addEvents;
+    IBOutlet UITextField *textField;
 }
 -(IBAction)addEvent:(id)sender;
 

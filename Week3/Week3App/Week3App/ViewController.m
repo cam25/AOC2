@@ -30,10 +30,19 @@
 }
 -(IBAction)addEvent:(id)sender
 {
-    SecondViewController *newViewController = [[SecondViewController alloc]initWithNibName:@"SecondView" bundle:nil];
+    SecondViewController *newViewController = [[SecondViewController alloc]initWithNibName:@"SecondViewController" bundle:nil];
     if (newViewController != nil) {
         [self presentViewController:newViewController animated:TRUE completion:nil];
         
     }
 }
+
+-(IBAction)timeChange:(id)sender
+{
+    UIDatePicker *datePick = (UIDatePicker*) sender;
+    if (datePick != nil) {
+        
+    }
+}
+
 @end
