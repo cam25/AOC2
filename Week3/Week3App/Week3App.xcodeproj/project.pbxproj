@@ -19,6 +19,7 @@
 		11A15ADB16F6CC6000EB1DE3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A15ADA16F6CC6000EB1DE3 /* ViewController.m */; };
 		11A15ADE16F6CC6000EB1DE3 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11A15ADC16F6CC6000EB1DE3 /* ViewController_iPhone.xib */; };
 		11A15AE116F6CC6000EB1DE3 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11A15ADF16F6CC6000EB1DE3 /* ViewController_iPad.xib */; };
+		11A15AE916F6D8CE00EB1DE3 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A15AE816F6D8CE00EB1DE3 /* SecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,8 @@
 		11A15ADA16F6CC6000EB1DE3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		11A15ADD16F6CC6000EB1DE3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		11A15AE016F6CC6000EB1DE3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		11A15AE716F6D8CE00EB1DE3 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		11A15AE816F6D8CE00EB1DE3 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				11A15AD116F6CC6000EB1DE3 /* AppDelegate.m */,
 				11A15AD916F6CC6000EB1DE3 /* ViewController.h */,
 				11A15ADA16F6CC6000EB1DE3 /* ViewController.m */,
+				11A15AE716F6D8CE00EB1DE3 /* SecondViewController.h */,
+				11A15AE816F6D8CE00EB1DE3 /* SecondViewController.m */,
 				11A15ADC16F6CC6000EB1DE3 /* ViewController_iPhone.xib */,
 				11A15ADF16F6CC6000EB1DE3 /* ViewController_iPad.xib */,
 				11A15AC816F6CC6000EB1DE3 /* Supporting Files */,
@@ -180,6 +185,7 @@
 				11A15ACE16F6CC6000EB1DE3 /* main.m in Sources */,
 				11A15AD216F6CC6000EB1DE3 /* AppDelegate.m in Sources */,
 				11A15ADB16F6CC6000EB1DE3 /* ViewController.m in Sources */,
+				11A15AE916F6D8CE00EB1DE3 /* SecondViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +316,7 @@
 				11A15AE616F6CC6000EB1DE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
