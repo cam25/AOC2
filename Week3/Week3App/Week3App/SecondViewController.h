@@ -7,15 +7,25 @@
 //
 
 #import <UIKit/UIKit.h>
+@protocol SecondViewDelegate <NSObject>
+@required
+-(void)DidClose:(NSString*)nameString;
+
+@end
 
 @interface SecondViewController : UIViewController <UITextFieldDelegate>
 {
     IBOutlet UIButton *saveBtn;
     IBOutlet UIButton *closeKeyboard;
     IBOutlet UITextField *textInfo;
+    IBOutlet UIDatePicker *pickDate;
+    id <SecondViewDelegate> delegate;
+    
 }
 -(IBAction)timeChange:(id)sender;
 -(IBAction)save:(id)sender;
 -(IBAction)closeKeyboard:(id)sender;
 
+@property (strong) id <SecondViewDelegate> delegate;
 @end
+

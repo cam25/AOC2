@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ViewController : UIViewController <UITextFieldDelegate>
+#import "SecondViewController.h"
+@interface ViewController : UIViewController <SecondViewDelegate>
 {
     IBOutlet UIButton *addEvents;
     IBOutlet UITextView *textField;

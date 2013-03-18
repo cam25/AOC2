@@ -13,15 +13,12 @@
 @end
 
 @implementation SecondViewController
+@synthesize delegate;
+
 
 -(IBAction)timeChange:(id)sender
 {
-    UIDatePicker *datePick = (UIDatePicker*) sender;
-    if (datePick != nil)
-    {
-        NSDate *date = datePick.date;
-        NSLog(@"date =%@",[date description]);
-    }
+ 
 }
 
 
@@ -47,11 +44,35 @@
 }
 -(IBAction)save:(id)sender
 {
-    
+    if (saveBtn.tag == 0) {
+        
+        
+        
+        NSString *tempString = textInfo.text;
+        NSLog(@"%@", tempString);
+        
+        if (saveBtn.tag == 0) {
+            
+            UIDatePicker *datePick = (UIDatePicker*) sender;
+            
+            NSDate *date = datePick.date;
+            NSLog(@"date =%@",[date description]);
+            
+            NSString *tempString = textInfo.text;
+            NSLog(@"%@", tempString);
+            
+            NSDateFormatter *formatDate = [[NSDateFormatter alloc] init];
+            [formatDate setDateFormat:@"EEE, MMM d, yyyy hh:mm a"];
+            NSString *stringDate = [formatDate stringFromDate:date];
+            NSLog(@"%@", stringDate);
+            
+        }
+        
+    }
 }
-
 -(IBAction)closeKeyboard:(id)sender
 {
     [textInfo resignFirstResponder];
+    
 }
 @end

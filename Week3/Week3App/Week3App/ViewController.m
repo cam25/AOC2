@@ -33,9 +33,15 @@
 {
     SecondViewController *newViewController = [[SecondViewController alloc]initWithNibName:@"SecondViewController" bundle:nil];
     if (newViewController != nil) {
+        newViewController.delegate = self;
         [self presentViewController:newViewController animated:TRUE completion:nil];
         
     }
+}
+
+-(void)DidClose:(NSString *)nameString
+{
+    textField.text = nameString;
 }
 
 -(IBAction)timeChange:(id)sender
