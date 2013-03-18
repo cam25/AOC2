@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SecondViewController.h
 //  Week3App
 //
 //  Created by Cameron Mozie on 3/18/13.
@@ -8,11 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-{
-    IBOutlet UIButton *addEvents;
-}
--(IBAction)addEvent:(id)sender;
-
+@interface SecondViewController : UIViewController
 
 @end
