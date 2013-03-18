@@ -8,10 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SecondViewController : UIViewController
+@interface SecondViewController : UIViewController <UITextFieldDelegate>
 {
-    
+    IBOutlet UIButton *saveBtn;
+    IBOutlet UIButton *closeKeyboard;
+    IBOutlet UITextField *textInfo;
 }
 -(IBAction)timeChange:(id)sender;
+-(IBAction)save:(id)sender;
+-(IBAction)closeKeyboard:(id)sender;
 
 @end

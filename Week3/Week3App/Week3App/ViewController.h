@@ -11,7 +11,7 @@
 @interface ViewController : UIViewController <UITextFieldDelegate>
 {
     IBOutlet UIButton *addEvents;
-    IBOutlet UITextField *textField;
+    IBOutlet UITextView *textField;
 }
 -(IBAction)addEvent:(id)sender;
 
