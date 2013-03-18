@@ -18,16 +18,8 @@
 
 -(IBAction)timeChange:(id)sender
 {
-    UIDatePicker *datePick = (UIDatePicker*) sender;
-    
-    NSDate *date = datePick.date;
-  
+
  
-    
-    NSDateFormatter *formatDate = [[NSDateFormatter alloc] init];
-    [formatDate setDateFormat:@"EEE, MMM d, yyyy hh:mm a"];
-    NSString *stringDate = [formatDate stringFromDate:date];
-    NSLog(@"%@", stringDate);
 }
 
 
@@ -55,18 +47,22 @@
 {
     
     if ([sender tag] == 0) {
-            
+        
       
             
             NSString *tempString = textInfo.text;
             NSLog(@"%@", tempString);
-            
-           
-            
-        }else{
-            
-            [self dismissViewControllerAnimated:true completion:nil];
-        }
+            stringDate = pickDate.date;
+            NSDateFormatter *formatDate = [[NSDateFormatter alloc] init];
+            [formatDate setDateFormat:@"EEE, MMM d, yyyy hh:mm a"];
+            finalString = [formatDate stringFromDate:stringDate];
+        NSLog(@"%@",finalString);
+        
+        
+       
+            [delegate DidClose:tempString closeDate:finalString];
+        [self dismissViewControllerAnimated:true completion:nil];
+    }
         
     
 }

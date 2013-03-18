@@ -41,7 +41,7 @@
 
 -(void)DidClose:(NSString*)nameString closeDate:(NSString*)dateClose
 {
-    combinedStrings = [NSString stringWithFormat:@"\n %@ due on \n %@\n", nameString, dateClose];
+    combinedStrings = [NSString stringWithFormat:@"\n Event: %@ \n Day Of Event: %@\n", nameString, dateClose];
     textField.text =[textField.text stringByAppendingString:combinedStrings];
 }
 

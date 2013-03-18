@@ -19,6 +19,9 @@
     IBOutlet UIButton *closeKeyboard;
     IBOutlet UITextField *textInfo;
     IBOutlet UIDatePicker *pickDate;
+    NSDate *stringDate;
+    NSString *finalString;
+    
     id <SecondViewDelegate> delegate;
     
 }

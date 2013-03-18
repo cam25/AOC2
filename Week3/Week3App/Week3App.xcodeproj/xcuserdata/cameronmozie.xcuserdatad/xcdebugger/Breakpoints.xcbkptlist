@@ -20,19 +20,6 @@
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
-         filePath = "Week3App/SecondViewController.m"
-         timestampString = "385334991.401211"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "67"
-         endingLineNumber = "67"
-         landmarkName = "-save:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
          filePath = "Week3App/ViewController.m"
          timestampString = "385334976.968564"
          startingColumnNumber = "9223372036854775807"
