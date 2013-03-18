@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
-//add 
+{
+    IBOutlet UIButton *addEvents;
+}
+-(IBAction)addEvent:(id)sender;
+
 
 @end
