@@ -13,7 +13,7 @@
 @end
 
 @implementation SecondViewController
-@synthesize delegate;
+@synthesize delegate;//delegate
 
 
 -(IBAction)timeChange:(id)sender
@@ -46,25 +46,27 @@
 -(IBAction)save:(id)sender
 {
    
-    if ([sender tag] == 0) {
+    if ([sender tag] == 0) {// if saveButn is clicked
         
-         BOOL emptyField = [textInfo.text isEqual:@""];
-        if (emptyField == NO) {
+        
+         BOOL emptyField = [textInfo.text isEqual:@""];//creates bool variable to hold the value of the text field text to an empty string
+        
+        if (emptyField == NO) {//if text field is not empty then create strings of date and event
             
-            NSString *tempString = textInfo.text;
+            NSString *tempString = textInfo.text;//sets temp string to value of text in text field
             NSLog(@"%@", tempString);
-            stringDate = pickDate.date;
+            stringDate = pickDate.date;//sets the date picker date to string date
             NSDateFormatter *formatDate = [[NSDateFormatter alloc] init];
-            [formatDate setDateFormat:@"EEE, MMM d, yyyy hh:mm a"];
-            finalString = [formatDate stringFromDate:stringDate];
+            [formatDate setDateFormat:@"EEE, MMM d, yyyy hh:mm a"];//formats date to weekday, month, day,year,time 
+            finalString = [formatDate stringFromDate:stringDate];//stringifies the date from picker
         NSLog(@"%@",finalString);
             
-            [delegate DidClose:tempString closeDate:finalString];
-            [self dismissViewControllerAnimated:true completion:nil];
+            [delegate DidClose:tempString closeDate:finalString];//passing of values from text field and date to delegate
+            [self dismissViewControllerAnimated:true completion:nil];//returns to inital screen 
         }
         
        
-        if (emptyField == YES) {
+        if (emptyField == YES) {//if field is empty show alert
             UIAlertView *noTextError = [[UIAlertView alloc] initWithTitle:@"No Event Entered" message:@"Please Enter an Event and Date" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Continue", nil];
             if (noTextError != nil) {
                 [noTextError show];
@@ -76,7 +78,7 @@
 }
 -(IBAction)closeKeyboard:(id)sender
 {
-    [textInfo resignFirstResponder];
+    [textInfo resignFirstResponder];//closes keyboard
     
 }
 @end

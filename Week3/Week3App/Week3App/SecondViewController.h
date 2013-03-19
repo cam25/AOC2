@@ -9,11 +9,11 @@
 #import <UIKit/UIKit.h>
 @protocol SecondViewDelegate <NSObject>
 @required
--(void)DidClose:(NSString*)nameString closeDate:(NSString*)dateClose;
+-(void)DidClose:(NSString*)nameString closeDate:(NSString*)dateClose;//custon delegate
 
 @end
 
-@interface SecondViewController : UIViewController <UITextFieldDelegate>
+@interface SecondViewController : UIViewController <UITextFieldDelegate>//adds text field delegate to view control
 {
     IBOutlet UIButton *saveBtn;
     IBOutlet UIButton *closeKeyboard;
@@ -29,6 +29,6 @@
 -(IBAction)save:(id)sender;
 -(IBAction)closeKeyboard:(id)sender;
 
-@property (strong) id <SecondViewDelegate> delegate;
+@property (strong) id <SecondViewDelegate> delegate;//property of custom delegate
 @end
 
