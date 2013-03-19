@@ -45,10 +45,11 @@
 }
 -(IBAction)save:(id)sender
 {
-    
+   
     if ([sender tag] == 0) {
         
-      
+         BOOL emptyField = [textInfo.text isEqual:@""];
+        if (emptyField == NO) {
             
             NSString *tempString = textInfo.text;
             NSLog(@"%@", tempString);
@@ -57,11 +58,18 @@
             [formatDate setDateFormat:@"EEE, MMM d, yyyy hh:mm a"];
             finalString = [formatDate stringFromDate:stringDate];
         NSLog(@"%@",finalString);
-        
+            
+            [delegate DidClose:tempString closeDate:finalString];
+            [self dismissViewControllerAnimated:true completion:nil];
+        }
         
        
-            [delegate DidClose:tempString closeDate:finalString];
-        [self dismissViewControllerAnimated:true completion:nil];
+        if (emptyField == YES) {
+            UIAlertView *noTextError = [[UIAlertView alloc] initWithTitle:@"No Event Entered" message:@"Please Enter an Event and Date" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Continue", nil];
+            if (noTextError != nil) {
+                [noTextError show];
+            }
+        }
     }
         
     
