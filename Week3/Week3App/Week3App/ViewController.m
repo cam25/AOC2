@@ -18,8 +18,7 @@
 - (void)viewDidLoad
 {
     
-   
-    
+
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -29,6 +28,8 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
 -(IBAction)addEvent:(id)sender
 //second view controller
 {
@@ -43,9 +44,12 @@
 -(void)DidClose:(NSString*)nameString closeDate:(NSString*)dateClose
 {
     //delegate function 
-    combinedStrings = [NSString stringWithFormat:@"\n Event: %@ \n Day Of Event: %@\n", nameString, dateClose];//sets strings of values passed to function to combined string and formats the text to show on textview
+    combinedStrings = [NSString stringWithFormat:@"\n New Event: %@ \n Day Of Event: %@\n", nameString, dateClose];//sets strings of values passed to function to combined string and formats the text to show on textview
     textField.text =[textField.text stringByAppendingString:combinedStrings];//sets textField text to value of appended string combinedString
+   
+   
 }
+
 
 -(IBAction)timeChange:(id)sender
 {
