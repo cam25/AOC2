@@ -7,12 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ViewController : UIViewController
+#import "SecondViewController.h"
+@interface ViewController : UIViewController <SecondViewDelegate>
 {
     IBOutlet UIButton *addEvents;
+    IBOutlet UITextView *textField;
+    NSString *combinedStrings;
 }
 -(IBAction)addEvent:(id)sender;
-
 
 @end
