@@ -42,15 +42,15 @@
     }
 }
 
--(void)DidClose:(NSString*)nameString closeDate:(NSString*)dateClose
+-(void)DidClose:(NSString*)eventString closeDate:(NSString*)dateString
 {
     //delegate function
    
     if ([textField.text isEqualToString:@"Events Will Appear Here."]) {//if textfield text is equal to string 
-        textField.text = [NSString stringWithFormat:@"\n New Event: %@ \n Day Of Event: %@\n",nameString,dateClose];//replaces placeholder text with saved events
+        textField.text = [NSString stringWithFormat:@"\n New Event: %@ \n Day Of Event: %@\n",eventString,dateString];//replaces placeholder text with saved events
         
     }else{//else append other events into text view
-        textField.text = [textField.text stringByAppendingFormat:@"\n New Event: %@ \n Day Of Event: %@\n",nameString,dateClose];
+        textField.text = [textField.text stringByAppendingFormat:@"\n New Event: %@ \n Day Of Event: %@\n",eventString,dateString];
        
 }
     

@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 @protocol SecondViewDelegate <NSObject>
 @required
--(void)DidClose:(NSString*)nameString closeDate:(NSString*)dateClose;//custon delegate
+-(void)DidClose:(NSString*)eventString closeDate:(NSString*)dateString;//custon delegate
 
 @end
 
