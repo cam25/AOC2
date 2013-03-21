@@ -29,7 +29,6 @@
 -(IBAction)save:(id)sender;
 -(IBAction)closeKeyboard:(id)sender;
 -(IBAction)displayCloseKeyboardButn:(id)sender;
-
 @property (strong) id <SecondViewDelegate> delegate;//property of custom delegate
 
 

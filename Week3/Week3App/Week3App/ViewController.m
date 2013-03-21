@@ -35,8 +35,8 @@
 {
     SecondViewController *newViewController = [[SecondViewController alloc]initWithNibName:@"SecondViewController" bundle:nil];
     if (newViewController != nil) {
-        newViewController.delegate = self;
-        [self presentViewController:newViewController animated:TRUE completion:nil];
+        newViewController.delegate = self;//set delegate self
+        [self presentViewController:newViewController animated:TRUE completion:nil];//second view call
         
     }
 }
@@ -44,7 +44,7 @@
 -(void)DidClose:(NSString*)nameString closeDate:(NSString*)dateClose
 {
     //delegate function 
-    combinedStrings = [NSString stringWithFormat:@"\n New Event: %@ \n Day Of Event: %@\n", nameString, dateClose];//sets strings of values passed to function to combined string and formats the text to show on textview
+    combinedStrings = [NSString stringWithFormat:@"\n New Event: %@ \n Day Of Event: %@\n", nameString, dateClose];//sets the values of the strings passed to function to combined string and formats the text to show on textview
     textField.text =[textField.text stringByAppendingString:combinedStrings];//sets textField text to value of appended string combinedString
    
    
