@@ -17,8 +17,9 @@
 
 - (void)viewDidLoad
 {
-    
-
+  
+        textField.text = @"Events Will Appear Here.";
+ 
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -41,22 +42,18 @@
     }
 }
 
--(void)DidClose:(NSString*)nameString closeDate:(NSString*)dateClose
+-(void)DidClose:(NSString*)eventString closeDate:(NSString*)dateString
 {
-    //delegate function 
-    combinedStrings = [NSString stringWithFormat:@"\n New Event: %@ \n Day Of Event: %@\n", nameString, dateClose];//sets the values of the strings passed to function to combined string and formats the text to show on textview
-    textField.text =[textField.text stringByAppendingString:combinedStrings];//sets textField text to value of appended string combinedString
+    //delegate function
    
-   
-}
-
-
--(IBAction)timeChange:(id)sender
-{
-    UIDatePicker *datePick = (UIDatePicker*) sender;//date picker
-    if (datePick != nil) {
+    if ([textField.text isEqualToString:@"Events Will Appear Here."]) {//if textfield text is equal to string 
+        textField.text = [NSString stringWithFormat:@"\n New Event: %@ \n Day Of Event: %@\n",eventString,dateString];//replaces placeholder text with saved events
         
-    }
+    }else{//else append other events into text view
+        textField.text = [textField.text stringByAppendingFormat:@"\n New Event: %@ \n Day Of Event: %@\n",eventString,dateString];
+       
+}
+    
 }
 
 @end

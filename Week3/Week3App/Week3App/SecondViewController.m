@@ -18,7 +18,7 @@
 
 -(IBAction)timeChange:(id)sender
 {
-
+//moved contents to save
  
 }
 
@@ -85,6 +85,8 @@
     }
   
 }
+
+
 
 -(IBAction)displayCloseKeyboardButn:(id)sender
 {
