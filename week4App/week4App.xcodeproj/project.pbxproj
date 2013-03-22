@@ -19,6 +19,8 @@
 		11A15B4716FBF04100EB1DE3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A15B4616FBF04100EB1DE3 /* ViewController.m */; };
 		11A15B4A16FBF04100EB1DE3 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11A15B4816FBF04100EB1DE3 /* ViewController_iPhone.xib */; };
 		11A15B4D16FBF04100EB1DE3 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11A15B4B16FBF04100EB1DE3 /* ViewController_iPad.xib */; };
+		11A15B5616FBF47C00EB1DE3 /* EventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A15B5416FBF47C00EB1DE3 /* EventViewController.m */; };
+		11A15B5716FBF47C00EB1DE3 /* EventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11A15B5516FBF47C00EB1DE3 /* EventViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,9 @@
 		11A15B4616FBF04100EB1DE3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		11A15B4916FBF04100EB1DE3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		11A15B4C16FBF04100EB1DE3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		11A15B5316FBF47C00EB1DE3 /* EventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventViewController.h; sourceTree = "<group>"; };
+		11A15B5416FBF47C00EB1DE3 /* EventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventViewController.m; sourceTree = "<group>"; };
+		11A15B5516FBF47C00EB1DE3 /* EventViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +97,9 @@
 				11A15B4816FBF04100EB1DE3 /* ViewController_iPhone.xib */,
 				11A15B4B16FBF04100EB1DE3 /* ViewController_iPad.xib */,
 				11A15B3416FBF04100EB1DE3 /* Supporting Files */,
+				11A15B5316FBF47C00EB1DE3 /* EventViewController.h */,
+				11A15B5416FBF47C00EB1DE3 /* EventViewController.m */,
+				11A15B5516FBF47C00EB1DE3 /* EventViewController.xib */,
 			);
 			path = week4App;
 			sourceTree = "<group>";
@@ -167,6 +175,7 @@
 				11A15B4416FBF04100EB1DE3 /* Default-568h@2x.png in Resources */,
 				11A15B4A16FBF04100EB1DE3 /* ViewController_iPhone.xib in Resources */,
 				11A15B4D16FBF04100EB1DE3 /* ViewController_iPad.xib in Resources */,
+				11A15B5716FBF47C00EB1DE3 /* EventViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +189,7 @@
 				11A15B3A16FBF04100EB1DE3 /* main.m in Sources */,
 				11A15B3E16FBF04100EB1DE3 /* AppDelegate.m in Sources */,
 				11A15B4716FBF04100EB1DE3 /* ViewController.m in Sources */,
+				11A15B5616FBF47C00EB1DE3 /* EventViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +320,7 @@
 				11A15B5216FBF04100EB1DE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
