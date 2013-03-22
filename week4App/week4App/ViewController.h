@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ViewController : UIViewController
+#import "EventViewController.h"
+@interface ViewController : UIViewController <EventViewDelegate>
+{
+    
+        IBOutlet UIButton *addEvents;
+        IBOutlet UITextView *textField;
+        NSString *combinedStrings;
+}
+-(IBAction)addEvent:(id)sender;
 
 @end
