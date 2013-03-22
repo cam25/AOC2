@@ -13,8 +13,12 @@
     
         IBOutlet UIButton *addEvents;
         IBOutlet UITextView *textField;
-        NSString *combinedStrings;
+        IBOutlet UILabel *swipeLabel;
+    UISwipeGestureRecognizer *rightSwiper;
+    IBOutlet UIButton *save;
+    
+    
 }
--(IBAction)addEvent:(id)sender;
+-(IBAction)onSave:(id)sender;
 
 @end

@@ -17,8 +17,14 @@
 - (void)viewDidLoad
 {
     
+  
+    
+    
     textField.text = @"Events Will Appear Here.";
     
+    rightSwiper = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(onSwipe:)];
+    rightSwiper.direction = UISwipeGestureRecognizerDirectionRight;
+    [swipeLabel addGestureRecognizer:rightSwiper];
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -29,15 +35,31 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)onSwipe:(UISwipeGestureRecognizer*)recognizer
+{
+    if(recognizer.direction == UISwipeGestureRecognizerDirectionRight)
+    {
+        EventViewController *newViewController = [[EventViewController alloc]initWithNibName:@"EventViewController" bundle:nil];
+        if (newViewController != nil) {
+            newViewController.delegate = self;//set delegate self
+            [self presentViewController:newViewController animated:TRUE completion:nil];//second view call
+            
+        }
+    }
+   
+}
 
--(IBAction)addEvent:(id)sender
+
+-(IBAction)onSave:(id)sender
 //second view controller
 {
-    EventViewController *newViewController = [[EventViewController alloc]initWithNibName:@"EventViewController" bundle:nil];
-    if (newViewController != nil) {
-        newViewController.delegate = self;//set delegate self
-        [self presentViewController:newViewController animated:TRUE completion:nil];//second view call
+    NSString *textData = textField.text;
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if(defaults != nil){
+        [defaults setObject:textData forKey:@"events"];
         
+        [defaults synchronize];
     }
 }
 
