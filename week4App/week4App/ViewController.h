@@ -16,9 +16,11 @@
         IBOutlet UILabel *swipeLabel;
     UISwipeGestureRecognizer *rightSwiper;
     IBOutlet UIButton *save;
+    IBOutlet UIButton *clearEvents;
     
     
 }
 -(IBAction)onSave:(id)sender;
+-(IBAction)clearEvents:(id)sender;
 
 @end

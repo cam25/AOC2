@@ -16,11 +16,18 @@
 
 - (void)viewDidLoad
 {
-    
-  
-    
-    
+   
     textField.text = @"Events Will Appear Here.";
+    
+    NSUserDefaults *savedEvents = [NSUserDefaults standardUserDefaults];
+   
+        NSString *stringFromView = [savedEvents objectForKey:@"Events"];
+        textField.text = stringFromView;
+       
+    
+    
+    
+   
     
     rightSwiper = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(onSwipe:)];
     rightSwiper.direction = UISwipeGestureRecognizerDirectionRight;
@@ -57,15 +64,17 @@
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     if(defaults != nil){
-        [defaults setObject:textData forKey:@"events"];
+        [defaults setObject:textData forKey:@"Events"];
         
         [defaults synchronize];
+        NSLog(@"Saved");
     }
 }
 
 -(void)DidClose:(NSString*)eventString closeDate:(NSString*)dateString
 {
     //delegate function
+    
     
     if ([textField.text isEqualToString:@"Events Will Appear Here."]) {//if textfield text is equal to string
         textField.text = [NSString stringWithFormat:@"\n New Event: %@ \n Day Of Event: %@\n",eventString,dateString];//replaces placeholder text with saved events
@@ -76,5 +85,12 @@
     }
     
 }
+-(IBAction)clearEvents:(id)sender
+{
+    
+    textField.text = @"";
+    textField.text = @"Events Will Appear Here.";
+}
+
 
 @end

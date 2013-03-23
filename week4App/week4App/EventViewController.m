@@ -32,8 +32,16 @@
 
 - (void)viewDidLoad
 {
+    
+    
+    
     closeKeyboard.hidden = YES;//hides keyboard
     saveBtn.hidden = YES;
+    
+    leftSwiper = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(onSwipe:)];
+    leftSwiper.direction = UISwipeGestureRecognizerDirectionLeft;
+    [swipeLeftLabel addGestureRecognizer:leftSwiper];
+    
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(displayCloseKeyboardButn:) name:UIKeyboardWillShowNotification object:nil];//displays keyboard and calls displayCloseKeyboardButn which shows close key butn
     pickDate.minimumDate = [NSDate date];//set minimum date for date picker to current day
@@ -53,7 +61,13 @@
 {
     
     
-    if ([sender tag] == 0) {// if saveButn is clicked
+        
+}
+-(IBAction)onSwipe:(UISwipeGestureRecognizer*)recognizer
+{
+    if (recognizer.direction == UISwipeGestureRecognizerDirectionLeft) {
+        
+    // if saveButn is clicked
         
         
         BOOL emptyField = [textInfo.text isEqual:@""];//creates bool variable to hold the value of the text field text to an empty string
@@ -81,8 +95,9 @@
                 [noTextError show];
             }
         }
-    }
     
+
+    }
 }
 
 

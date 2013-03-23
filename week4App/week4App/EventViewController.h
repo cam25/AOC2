@@ -22,6 +22,8 @@
     IBOutlet UIDatePicker *pickDate;
     NSDate *stringDate;
     NSString *finalString;
+    UISwipeGestureRecognizer *leftSwiper;
+    IBOutlet UILabel *swipeLeftLabel;
     
     id <EventViewDelegate> delegate;
     
