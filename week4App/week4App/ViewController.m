@@ -19,21 +19,23 @@
     
 
    
-   
+   [super viewDidLoad];
    
     NSUserDefaults *savedEvents = [NSUserDefaults standardUserDefaults];
-   
+    if (savedEvents != nil) {
         NSString *stringFromView = [savedEvents objectForKey:@"Events"];
         textField.text = stringFromView;
-   
-   
- 
+    }
+       
+    if ([textField.text length] == 0) {
+        textField.text = @"Events Will Appear Here.";
+    }
      
     rightSwiper = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(onSwipe:)];
     rightSwiper.direction = UISwipeGestureRecognizerDirectionRight;
     [swipeLabel addGestureRecognizer:rightSwiper];
 
-    [super viewDidLoad];
+    
     
   
 	// Do any additional setup after loading the view, typically from a nib.
