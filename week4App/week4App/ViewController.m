@@ -16,23 +16,26 @@
 
 - (void)viewDidLoad
 {
-   
-    textField.text = @"Events Will Appear Here.";
     
+
+   
+   
+   
     NSUserDefaults *savedEvents = [NSUserDefaults standardUserDefaults];
    
         NSString *stringFromView = [savedEvents objectForKey:@"Events"];
         textField.text = stringFromView;
-       
-    
-    
-    
    
-    
+   
+ 
+     
     rightSwiper = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(onSwipe:)];
     rightSwiper.direction = UISwipeGestureRecognizerDirectionRight;
     [swipeLabel addGestureRecognizer:rightSwiper];
+
     [super viewDidLoad];
+    
+  
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -60,6 +63,8 @@
 -(IBAction)onSave:(id)sender
 //second view controller
 {
+
+   
     NSString *textData = textField.text;
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
@@ -68,8 +73,10 @@
         
         [defaults synchronize];
         NSLog(@"Saved");
+    
     }
-}
+    
+    }
 
 -(void)DidClose:(NSString*)eventString closeDate:(NSString*)dateString
 {
@@ -87,9 +94,14 @@
 }
 -(IBAction)clearEvents:(id)sender
 {
-    
-    textField.text = @"";
-    textField.text = @"Events Will Appear Here.";
+    if ([sender tag] == 0) {
+        
+        NSString *appDomain = [[NSBundle mainBundle] bundleIdentifier];
+        [[NSUserDefaults standardUserDefaults] removePersistentDomainForName:appDomain];
+        
+        textField.text = @"Events Will Appear Here.";
+        
+    }
 }
 
 
