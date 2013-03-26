@@ -21,18 +21,20 @@
    
    [super viewDidLoad];
    
-    NSUserDefaults *savedEvents = [NSUserDefaults standardUserDefaults];
+    NSUserDefaults *savedEvents = [NSUserDefaults standardUserDefaults];//user defaults from the savedEvents,loads default savedEvents into text view
     if (savedEvents != nil) {
-        NSString *stringFromView = [savedEvents objectForKey:@"Events"];
-        textField.text = stringFromView;
+        NSString *stringFromView = [savedEvents objectForKey:@"Events"];//creates an nssstring for the saved events object for key Events
+        textField.text = stringFromView;//sets the textfield text to the events from the savedEventes object
     }
        
-    if ([textField.text length] == 0) {
+    if ([textField.text length] == 0) {//if textfield length is 0 then display the placeholder
         textField.text = @"Events Will Appear Here.";
     }
      
-    rightSwiper = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(onSwipe:)];
+    rightSwiper = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(onSwipe:)];//initializes the right swipe gesture
     rightSwiper.direction = UISwipeGestureRecognizerDirectionRight;
+    
+    //adds gesture recognizer to swipeLabel
     [swipeLabel addGestureRecognizer:rightSwiper];
 
     
@@ -49,7 +51,7 @@
 
 -(void)onSwipe:(UISwipeGestureRecognizer*)recognizer
 {
-    if(recognizer.direction == UISwipeGestureRecognizerDirectionRight)
+    if(recognizer.direction == UISwipeGestureRecognizerDirectionRight)// if the swipe is swiped to the right show second view controller
     {
         EventViewController *newViewController = [[EventViewController alloc]initWithNibName:@"EventViewController" bundle:nil];
         if (newViewController != nil) {
@@ -69,11 +71,11 @@
    
     NSString *textData = textField.text;
     
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];//creates defaults object for storing the defaults a
     if(defaults != nil){
-        [defaults setObject:textData forKey:@"Events"];
+        [defaults setObject:textData forKey:@"Events"];//stores text in the text view into user defaults
         
-        [defaults synchronize];
+        [defaults synchronize];//saves to the default 
         NSLog(@"Saved");
     
     }
@@ -96,12 +98,12 @@
 }
 -(IBAction)clearEvents:(id)sender
 {
-    if ([sender tag] == 0) {
+    if ([sender tag] == 0) {//if clear button is clicked
         
         NSString *appDomain = [[NSBundle mainBundle] bundleIdentifier];
-        [[NSUserDefaults standardUserDefaults] removePersistentDomainForName:appDomain];
+        [[NSUserDefaults standardUserDefaults] removePersistentDomainForName:appDomain];//clears everything in the UserDefaults
         
-        textField.text = @"Events Will Appear Here.";
+        textField.text = @"Events Will Appear Here.";//sets placeholder text back after defaults are cleared
         
     }
 }
