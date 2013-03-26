@@ -7,7 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ViewController : UIViewController
+#import "EventViewController.h"
+@interface ViewController : UIViewController <EventViewDelegate>
+{
+    
+        IBOutlet UIButton *addEvents;
+        IBOutlet UITextView *textField;
+        IBOutlet UILabel *swipeLabel;
+    UISwipeGestureRecognizer *rightSwiper;
+    IBOutlet UIButton *save;
+    IBOutlet UIButton *clearEvents;
+    
+    
+}
+-(IBAction)onSave:(id)sender;
+-(IBAction)clearEvents:(id)sender;
 
 @end
