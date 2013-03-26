@@ -76,8 +76,8 @@
         [defaults setObject:textData forKey:@"Events"];//stores text in the text view into user defaults
         
         [defaults synchronize];//saves to the default 
-        NSLog(@"Saved");
-    
+        UIAlertView *saved = [[UIAlertView alloc] initWithTitle:@"Saved" message:@"Your Event Was Saved To Storage!" delegate:nil cancelButtonTitle:@"Sweet" otherButtonTitles:nil, nil];
+        [saved show];
     }
     
     }
